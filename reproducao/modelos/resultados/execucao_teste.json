@@ -1,0 +1,19 @@
+{
+  "finalidade": "reproducao_da_avaliacao_final_publicada",
+  "decisao_sha256": "e32b0435ebf07e82dee1eb3d01b64d189c13562ea08b5cb5493745f904abf99f",
+  "versoes": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8"
+  },
+  "ficheiros_teste_sha256": {
+    "wisconsin_teste_reservado.csv": "7c58728928a43388b135f70093a1f1ff2024818cdfc316be366282b6effea7b9",
+    "penguins_teste_reservado.csv": "d7af6e63e003aa6ada042416b1f5d35f996c84e506975f2b4200d2d3a6ebff2a"
+  },
+  "n_teste_wisconsin": 114,
+  "n_teste_pinguins": 69,
+  "mediana_massa_desenvolvimento_g": 4050.0,
+  "limiar_wisconsin": 0.2
+}

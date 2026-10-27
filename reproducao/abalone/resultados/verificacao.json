@@ -1,0 +1,14 @@
+{
+  "script_sha256": "c4c7830cbbdb9703f6c71232e3bd7ebe3b007ef039803a2bf6ff043a4afd4398",
+  "protocol_sha256": "f86745128e129a3fff484a942d7fe1879a64836574e9e4fc542366918077c99c",
+  "checks": {
+    "development_and_test_ids_disjoint": true,
+    "all_original_rows_preserved": true,
+    "five_identical_cv_splits_used_for_all_candidates": true,
+    "decision_written_before_test_evaluation": true,
+    "only_selected_and_predefined_reference_evaluated_on_test": true,
+    "reversed_prediction_file_join_reproduces_saved_metrics": true,
+    "plots_visually_inspected": true,
+    "old_book_results_not_recomputed": true
+  }
+}

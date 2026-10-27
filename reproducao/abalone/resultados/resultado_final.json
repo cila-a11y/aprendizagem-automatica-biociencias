@@ -1,0 +1,81 @@
+{
+  "utc": "2026-10-27T11:27:06.666863+00:00",
+  "decision_utc": "2026-10-27T11:27:01.557787+00:00",
+  "decision_sha256": "0d2eea31e258071436791a9602520a62a9d1aaa9760d45b18800710ff3f53674",
+  "protocol_sha256": "f86745128e129a3fff484a942d7fe1879a64836574e9e4fc542366918077c99c",
+  "selected_model": "Floresta",
+  "tested_procedures": [
+    "Referencia",
+    "Floresta"
+  ],
+  "n_development": 3341,
+  "n_test": 836,
+  "training_median": 9.0,
+  "cv_results": [
+    {
+      "procedimento": "Referencia",
+      "mae_medio": 2.371464246395102,
+      "desvio_mae": 0.09749627912110402,
+      "rmse_medio": 3.3405139232627237
+    },
+    {
+      "procedimento": "Regressao_linear",
+      "mae_medio": 1.9151011128687958,
+      "desvio_mae": 0.0277817358788911,
+      "rmse_medio": 2.6498056880422176
+    },
+    {
+      "procedimento": "Floresta",
+      "mae_medio": 1.9146718035456505,
+      "desvio_mae": 0.05676555186501955,
+      "rmse_medio": 2.650505820717501
+    }
+  ],
+  "test_results": {
+    "Referencia": {
+      "n": 836,
+      "mae": 2.3552631578947367,
+      "rmse": 3.31283570114413,
+      "r2": -0.08735730765550409,
+      "median_absolute_error": 2.0,
+      "max_absolute_error": 17.0,
+      "mean_signed_residual": 0.9389952153110048,
+      "prediction_min": 9.0,
+      "prediction_max": 9.0
+    },
+    "Floresta": {
+      "n": 836,
+      "mae": 1.9070868351639552,
+      "rmse": 2.594635859227736,
+      "r2": 0.33300079853330766,
+      "median_absolute_error": 1.437593785568148,
+      "max_absolute_error": 14.852628540577072,
+      "mean_signed_residual": 0.0011181586808383397,
+      "prediction_min": 3.6017801591038814,
+      "prediction_max": 16.013802172221475
+    }
+  },
+  "largest_error_record": {
+    "id_registo": 295.0,
+    "Rings": 26.0,
+    "Length": 0.6,
+    "Diameter": 0.495,
+    "Whole_weight": 1.0575,
+    "previsao": 11.147371459422928,
+    "previsao_referencia": 9.0,
+    "residuo": 14.852628540577072,
+    "erro_absoluto": 14.852628540577072
+  },
+  "test_rings_range": [
+    1,
+    26
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.8.0",
+    "matplotlib": "3.10.8"
+  },
+  "note": "Resultados descritivos desta divisão; o teste não orientou a escolha do procedimento."
+}

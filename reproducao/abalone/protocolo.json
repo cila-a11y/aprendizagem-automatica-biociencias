@@ -1,0 +1,67 @@
+{
+  "dataset": "UCI Abalone",
+  "doi": "10.24432/C55C7W",
+  "source_url": "https://archive.ics.uci.edu/ml/machine-learning-databases/abalone/abalone.data",
+  "target": "Rings",
+  "features": [
+    "Length",
+    "Diameter",
+    "Whole_weight"
+  ],
+  "units": "Values preserved in the scale provided by the source (continuous values divided by 200). No undocumented unit reinterpretation.",
+  "splitting": {
+    "test_size": 0.2,
+    "random_state": 2026,
+    "shuffle": true,
+    "stratify": null,
+    "id": "id_registo = original 1-based row number",
+    "sort_prepared_files_by_id": true
+  },
+  "cv": {
+    "class": "KFold",
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 2026,
+    "same_folds_for_all_candidates": true
+  },
+  "models": {
+    "Referencia": {
+      "type": "DummyRegressor",
+      "strategy": "median"
+    },
+    "Regressao_linear": {
+      "type": "LinearRegression"
+    },
+    "Floresta": {
+      "type": "RandomForestRegressor",
+      "n_estimators": 200,
+      "min_samples_leaf": 5,
+      "max_features": 1.0,
+      "random_state": 2026,
+      "n_jobs": 1
+    }
+  },
+  "model_selection": "lowest arithmetic mean fold MAE; exact ties use order Referencia, Regressao_linear, Floresta",
+  "report_cv": [
+    "mean_mae",
+    "sd_mae_ddof1",
+    "mean_rmse"
+  ],
+  "evaluation": "only selected procedure and predefined median reference on test after selection saved",
+  "report_test": [
+    "n",
+    "mae",
+    "rmse",
+    "r2",
+    "median_absolute_error",
+    "max_absolute_error",
+    "mean_signed_residual",
+    "prediction_min",
+    "prediction_max"
+  ],
+  "prediction_policy": "continuous predictions, no rounding or clipping",
+  "predictor_policy": "three positive finite external measurements chosen before model fitting; no use of Sex, Height, Shucked_weight, Viscera_weight or Shell_weight",
+  "data_quality": "Abort on missing/nonfinite/nonpositive chosen predictors or nonpositive/noninteger target; no silent row deletion. id_registo is not biological proof of independence.",
+  "hypothesis_scope": "descriptive held-out evaluation under random row split in the available data; no geographic, temporal, causal or individual error guarantee",
+  "frozen_before_fit": true
+}

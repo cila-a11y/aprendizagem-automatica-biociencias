@@ -1,0 +1,23 @@
+{
+  "n_desenvolvimento": 275,
+  "n_completos": 273,
+  "n_excluidos_so_desta_exploracao": 2,
+  "variaveis": [
+    "bill_length_mm",
+    "bill_depth_mm",
+    "flipper_length_mm",
+    "body_mass_g"
+  ],
+  "semente": 2026,
+  "n_init": 20,
+  "contagens_K3": {
+    "1": 104,
+    "2": 98,
+    "3": 71
+  },
+  "silhuetas": {
+    "2": 0.5379752876089756,
+    "3": 0.43375273832930233,
+    "4": 0.38752310144976976
+  }
+}

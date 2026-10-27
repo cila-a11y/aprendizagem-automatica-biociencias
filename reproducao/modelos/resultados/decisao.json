@@ -1,0 +1,34 @@
+{
+  "finalidade": "reproducao_da_analise_descrita_no_livro",
+  "dados_utilizados_nesta_etapa": "apenas_desenvolvimento",
+  "protocolo_sha256": "68c7553da6e92f47ae4e35548bbf7944fcb38f946c88f4977c1c4d4458de20b1",
+  "ficheiros_desenvolvimento_sha256": {
+    "wisconsin_desenvolvimento.csv": "5f2320a01f7c650b06facaabcd8a12fa3cd7cb44eb1495a63efc3d6e7dc91c98",
+    "penguins_desenvolvimento.csv": "835d1781eee4b4fe72593ba5f3710cfc14703e8bdadb159a051107e9dc872efa"
+  },
+  "versoes": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8"
+  },
+  "wisconsin": {
+    "modelo": "logistica",
+    "entradas": [
+      "mean radius",
+      "mean texture"
+    ],
+    "limiar": 0.2,
+    "criterio_modelo": "maior_media_AUC_por_parte",
+    "criterio_limiar": "sensibilidade >= 0.90; maior especificidade entre elegiveis"
+  },
+  "penguins": {
+    "modelo": "floresta_5",
+    "entradas": [
+      "flipper_length_mm",
+      "bill_length_mm"
+    ],
+    "criterio_modelo": "menor_media_MAE_por_parte"
+  }
+}

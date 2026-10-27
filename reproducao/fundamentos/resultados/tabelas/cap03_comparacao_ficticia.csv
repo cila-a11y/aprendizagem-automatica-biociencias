@@ -1,0 +1,4 @@
+observado_g,referencia_g,modelo_g,erro_absoluto_referencia_g,erro_absoluto_modelo_g
+3000,4000,3200,1000,200
+4000,4000,3900,0,100
+5000,4000,5100,1000,100

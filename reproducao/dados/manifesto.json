@@ -1,0 +1,14 @@
+{
+  "finalidade": "Conferir as cópias de dados utilizadas nos estudos.",
+  "sha256": {
+    "dados/abalone_desenvolvimento.csv": "32fd63fc75e05ac3fd469dc0cb5970b2ad8f91a54343c214081a6725ed802aa9",
+    "dados/abalone_teste_reservado.csv": "da57df568bb907b117240eae9f801ee0d0006404414fb7987fd9e67715329661",
+    "dados/penguins_desenvolvimento.csv": "835d1781eee4b4fe72593ba5f3710cfc14703e8bdadb159a051107e9dc872efa",
+    "dados/penguins_original.csv": "f204db2c753b0937caac3cb35258562c14f073e4bbc76be24b4c51ce22767a93",
+    "dados/penguins_teste_reservado.csv": "d7af6e63e003aa6ada042416b1f5d35f996c84e506975f2b4200d2d3a6ebff2a",
+    "dados/wisconsin_desenvolvimento.csv": "5f2320a01f7c650b06facaabcd8a12fa3cd7cb44eb1495a63efc3d6e7dc91c98",
+    "dados/wisconsin_teste_reservado.csv": "7c58728928a43388b135f70093a1f1ff2024818cdfc316be366282b6effea7b9",
+    "reproducao/abalone/originais/abalone.data": "de37cdcdcaaa50c309d514f248f7c2302a5f1f88c168905eba23fe2fbc78449f",
+    "reproducao/abalone/originais/abalone.names": "542eee5a2a0ee72db563de010dc3b5055b03c5dc624049ae1f2208fc66a14aac"
+  }
+}

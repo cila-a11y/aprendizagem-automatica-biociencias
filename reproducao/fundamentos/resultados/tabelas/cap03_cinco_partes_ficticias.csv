@@ -1,0 +1,11 @@
+observacao,parte,ronda_A,ronda_B,ronda_C,ronda_D,ronda_E
+1,A,validacao,treino,treino,treino,treino
+2,A,validacao,treino,treino,treino,treino
+3,B,treino,validacao,treino,treino,treino
+4,B,treino,validacao,treino,treino,treino
+5,C,treino,treino,validacao,treino,treino
+6,C,treino,treino,validacao,treino,treino
+7,D,treino,treino,treino,validacao,treino
+8,D,treino,treino,treino,validacao,treino
+9,E,treino,treino,treino,treino,validacao
+10,E,treino,treino,treino,treino,validacao

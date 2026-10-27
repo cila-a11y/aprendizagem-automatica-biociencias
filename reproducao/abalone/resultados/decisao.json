@@ -1,0 +1,50 @@
+{
+  "utc": "2026-10-27T11:27:01.557787+00:00",
+  "selected_model": "Floresta",
+  "selected_configuration": {
+    "type": "RandomForestRegressor",
+    "n_estimators": 200,
+    "min_samples_leaf": 5,
+    "max_features": 1.0,
+    "random_state": 2026,
+    "n_jobs": 1
+  },
+  "features": [
+    "Length",
+    "Diameter",
+    "Whole_weight"
+  ],
+  "target": "Rings",
+  "criterion": "lowest arithmetic mean fold MAE; exact ties use order Referencia, Regressao_linear, Floresta",
+  "cv_results": [
+    {
+      "procedimento": "Referencia",
+      "mae_medio": 2.371464246395102,
+      "desvio_mae": 0.09749627912110402,
+      "rmse_medio": 3.3405139232627237
+    },
+    {
+      "procedimento": "Regressao_linear",
+      "mae_medio": 1.9151011128687958,
+      "desvio_mae": 0.0277817358788911,
+      "rmse_medio": 2.6498056880422176
+    },
+    {
+      "procedimento": "Floresta",
+      "mae_medio": 1.9146718035456505,
+      "desvio_mae": 0.05676555186501955,
+      "rmse_medio": 2.650505820717501
+    }
+  ],
+  "protocol_sha256": "f86745128e129a3fff484a942d7fe1879a64836574e9e4fc542366918077c99c",
+  "development_sha256": "32fd63fc75e05ac3fd469dc0cb5970b2ad8f91a54343c214081a6725ed802aa9",
+  "test_values_used_for_selection": false,
+  "predictions_rounded_or_clipped": false,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.8.0",
+    "matplotlib": "3.10.8"
+  }
+}

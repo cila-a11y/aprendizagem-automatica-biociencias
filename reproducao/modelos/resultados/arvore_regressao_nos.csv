@@ -1,0 +1,8 @@
+no,filho_esquerdo,filho_direito,entrada,limite,n_treino,massa_media_g
+0,1,4,flipper_length_mm,211.5,273,4208.6080586080589
+1,2,3,flipper_length_mm,195.5,193,3788.8601036269429
+2,-1,-1,folha,,126,3597.0238095238096
+3,-1,-1,folha,,67,4149.626865671642
+4,5,6,bill_length_mm,47.75,80,5221.25
+5,-1,-1,folha,,37,4931.0810810810808
+6,-1,-1,folha,,43,5470.9302325581393
