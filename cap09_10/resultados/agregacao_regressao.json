@@ -1,0 +1,17 @@
+{
+  "id_registo": 1,
+  "parte_validacao": 3,
+  "n_treino": 218,
+  "resposta_observada": 3750.0,
+  "entradas": {
+    "flipper_length_mm": 181.0,
+    "bill_length_mm": 39.1
+  },
+  "arvores": 200,
+  "previsao_floresta": 3566.951393301618,
+  "media_saidas_individuais": 3566.951393301616,
+  "minimo_saida_individual": 3082.5,
+  "maximo_saida_individual": 4200.0,
+  "id_excluido_de_todos_os_treinos": true,
+  "interpretacao": "Distribuição de saídas de árvores para a mesma observação; não é um intervalo de incerteza."
+}

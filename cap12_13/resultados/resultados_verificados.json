@@ -1,0 +1,212 @@
+{
+  "versoes": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0"
+  },
+  "sha256_dados": {
+    "wisconsin_desenvolvimento.csv": "997edc11984a788044ef3ceb17595f0b77b1aac91a7186e8afd3c2dde3b6153d",
+    "penguins_desenvolvimento.csv": "8f3a9c1a2acef4ce13f8ba13cd30927194b0c30b73d83eaa82d65d269abb03d0"
+  },
+  "semente": 2026,
+  "n_wisconsin": 455,
+  "n_pinguins_desenvolvimento": 275,
+  "n_pinguins_com_massa": 273,
+  "teste_reservado_utilizado": false,
+  "convencoes": {
+    "classe_positiva": "maligno=1",
+    "decisao": "p>=0.50",
+    "erro_de_previsao": "observado menos previsto (g)",
+    "desvios_entre_partes": "ddof=1",
+    "desvios_permutation_importance": "ddof=0 (convenção da função)",
+    "Brier": "média de (p-y)^2, escala binária [0,1]",
+    "calibracao": "cinco faixas fixas; todos os pontos usam previsões fora do respetivo treino; a curva é uma descrição amostral, não uma estimativa com intervalos inferenciais"
+  },
+  "classificacao": {
+    "resumo_partes": [
+      {
+        "medida": "AUC",
+        "media_partes": 0.9521155830753354,
+        "desvio_partes_ddof1": 0.00988101781404845
+      },
+      {
+        "medida": "acerto_limiar_050",
+        "media_partes": 0.8945054945054945,
+        "desvio_partes_ddof1": 0.04007600555782521
+      },
+      {
+        "medida": "perda_logaritmica",
+        "media_partes": 0.25690124804253467,
+        "desvio_partes_ddof1": 0.038669802929391164
+      },
+      {
+        "medida": "Brier",
+        "media_partes": 0.07844726892523388,
+        "desvio_partes_ddof1": 0.016556890613602465
+      }
+    ],
+    "metricas_reunidas": [
+      {
+        "versao": "Logistica",
+        "AUC": 0.9518059855521156,
+        "acerto_limiar_050": 0.8945054945054945,
+        "perda_logaritmica": 0.25690124804253467,
+        "Brier": 0.07844726892523388
+      },
+      {
+        "versao": "Frequencia no treino",
+        "AUC": 0.5,
+        "acerto_limiar_050": 0.6263736263736264,
+        "perda_logaritmica": 0.6608575273573022,
+        "Brier": 0.2340297065571791
+      }
+    ]
+  },
+  "regressao": [
+    {
+      "procedimento": "Mediana",
+      "medida": "MAE_g",
+      "media_partes": 672.5420875420875,
+      "desvio_partes_ddof1": 84.63992923182022,
+      "media_ponderada_n": 672.57326007326,
+      "previsoes_reunidas": 672.57326007326
+    },
+    {
+      "procedimento": "Mediana",
+      "medida": "RMSE_g",
+      "media_partes": 828.0236408325375,
+      "desvio_partes_ddof1": 90.17130316458865,
+      "media_ponderada_n": 828.1194057618413,
+      "previsoes_reunidas": 832.065083460154
+    },
+    {
+      "procedimento": "Mediana",
+      "medida": "R2",
+      "media_partes": -0.07399109431377293,
+      "desvio_partes_ddof1": 0.09977134685205846,
+      "media_ponderada_n": -0.0745148955663476,
+      "previsoes_reunidas": -0.061739935665028334
+    },
+    {
+      "procedimento": "Linear",
+      "medida": "MAE_g",
+      "media_partes": 320.08239506795894,
+      "desvio_partes_ddof1": 23.38275503203262,
+      "media_ponderada_n": 320.0462953804463,
+      "previsoes_reunidas": 320.0462953804463
+    },
+    {
+      "procedimento": "Linear",
+      "medida": "RMSE_g",
+      "media_partes": 397.89108913646453,
+      "desvio_partes_ddof1": 32.854586258116605,
+      "media_ponderada_n": 397.8700682866963,
+      "previsoes_reunidas": 398.9573461895999
+    },
+    {
+      "procedimento": "Linear",
+      "medida": "R2",
+      "media_partes": 0.7501573765719036,
+      "desvio_partes_ddof1": 0.033679442707526853,
+      "media_ponderada_n": 0.7501052106095758,
+      "previsoes_reunidas": 0.7559063452032163
+    }
+  ],
+  "regressao_subgrupos": [
+    {
+      "especie": "Adelie",
+      "n": 126,
+      "erro_medio_assinado_g": 56.65709859401304,
+      "MAE_g": 337.38946283846184
+    },
+    {
+      "especie": "Chinstrap",
+      "n": 49,
+      "erro_medio_assinado_g": -289.4854441859793,
+      "MAE_g": 367.91431702400155
+    },
+    {
+      "especie": "Gentoo",
+      "n": 98,
+      "erro_medio_assinado_g": 70.14339085376999,
+      "MAE_g": 273.81392639836287
+    },
+    {
+      "especie": "Total",
+      "n": 273,
+      "erro_medio_assinado_g": -0.6298169912010413,
+      "MAE_g": 320.0462953804463
+    }
+  ],
+  "validacao_aninhada": {
+    "AUC_media_exterior": 0.9501547987616099,
+    "desvio_AUC_exterior_ddof1": 0.010400869287889612,
+    "Cs_escolhidos": [
+      10.0,
+      1.0,
+      0.1,
+      0.1,
+      1.0
+    ],
+    "metricas_reunidas": {
+      "AUC": 0.9485655314757482,
+      "acerto_limiar_050": 0.8835164835164835,
+      "perda_logaritmica": 0.2725313055516945,
+      "Brier": 0.08131465609252882
+    },
+    "nota": "As médias internas orientaram escolhas em cada treino exterior; não são confundidas com as avaliações exteriores. Não houve pesquisa final nas 455 amostras."
+  },
+  "permutacao": {
+    "AUC_original": 0.964204286365709,
+    "n_treino": 318,
+    "n_validacao": 137,
+    "importancias": [
+      {
+        "variavel": "mean radius",
+        "diminuicao_media_AUC": 0.3433937528499771,
+        "desvio_repeticoes_ddof0": 0.045509185187635116,
+        "desvio_amostral_ddof1": 0.04669143882354798
+      },
+      {
+        "variavel": "mean texture",
+        "diminuicao_media_AUC": 0.051003191974464165,
+        "desvio_repeticoes_ddof0": 0.016630486097923117,
+        "desvio_amostral_ddof1": 0.017062518721122223
+      }
+    ]
+  },
+  "exemplos_ficticios": {
+    "origem": "Todos os valores desta secção são fictícios.",
+    "auc": {
+      "partes": [
+        1.0,
+        1.0
+      ],
+      "media_partes": 1.0,
+      "reunida": 0.75
+    },
+    "erros": {
+      "partes": [
+        {
+          "parte": 1,
+          "n": 2,
+          "MAE_g": 100.0,
+          "RMSE_g": 100.0
+        },
+        {
+          "parte": 2,
+          "n": 1,
+          "MAE_g": 300.0,
+          "RMSE_g": 300.0
+        }
+      ],
+      "MAE_medio_simples_g": 200.0,
+      "RMSE_medio_simples_g": 200.0,
+      "MAE_reunido_g": 166.66666666666666,
+      "RMSE_reunido_g": 191.48542155126762
+    }
+  },
+  "n_avisos": 0
+}

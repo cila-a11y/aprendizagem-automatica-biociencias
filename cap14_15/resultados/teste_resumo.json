@@ -1,0 +1,139 @@
+{
+  "estatuto": "Reprodução didática de um protocolo e de resultados já publicados no livro; não constitui pré-registo nem avaliação prospectiva nova.",
+  "sha256_decisao": "ea05b8383718997920edeb5aa72ef188d12162638a9c4d2a86a1b582e6da5cd2",
+  "escolhas": {
+    "classificacao": "logistica",
+    "limiar": 0.2,
+    "regressao": "floresta"
+  },
+  "classificacao": [
+    {
+      "procedimento": "referencia",
+      "limiar_modelo": null,
+      "n": 114,
+      "AUC": 0.5,
+      "acerto": 0.631578947368421,
+      "sensibilidade": 0.0,
+      "especificidade": 1.0,
+      "VPP": null,
+      "VN": 72,
+      "FP": 0,
+      "FN": 42,
+      "VP": 0,
+      "Brier": 0.23271407597607716,
+      "perda_logaritmica": 0.6581679861838113
+    },
+    {
+      "procedimento": "logistica",
+      "limiar_modelo": 0.2,
+      "n": 114,
+      "AUC": 0.9460978835978836,
+      "acerto": 0.8245614035087719,
+      "sensibilidade": 0.9523809523809523,
+      "especificidade": 0.75,
+      "VPP": 0.6896551724137931,
+      "VN": 54,
+      "FP": 18,
+      "FN": 2,
+      "VP": 40,
+      "Brier": 0.08456748397288356,
+      "perda_logaritmica": 0.2765477077757485
+    }
+  ],
+  "regressao": [
+    {
+      "procedimento": "referencia",
+      "n": 69,
+      "MAE_g": 665.2173913043479,
+      "RMSE_g": 782.9709306614579,
+      "R2": -0.02599886105584348
+    },
+    {
+      "procedimento": "floresta",
+      "n": 69,
+      "MAE_g": 293.7228082988359,
+      "RMSE_g": 370.9548400900095,
+      "R2": 0.7696980124680217
+    }
+  ],
+  "referencia_final_massa_g": 4050.0,
+  "referencia_final_probabilidade": 0.37362637362637363,
+  "comparacao_pareada_regressao": {
+    "definicao": "erro absoluto da referência menos erro absoluto do modelo, na mesma linha",
+    "melhoria_media_g": 371.4945830055119,
+    "reducao_relativa_MAE": 0.5584559090932533,
+    "n_modelo_melhor": 58,
+    "n_modelo_pior": 11,
+    "n_empates_tolerancia_1e_9_g": 0,
+    "maior_melhoria_g": 1420.6609946834205,
+    "maior_agravamento_g": 623.6392880563835
+  },
+  "maior_erro_modelo": {
+    "id_registo": 262,
+    "species": "Gentoo",
+    "island": "Biscoe",
+    "flipper_length_mm": 209.0,
+    "bill_length_mm": 48.1,
+    "body_mass_g": 5500.0,
+    "previsto_referencia_g": 4050.0,
+    "erro_referencia_g": 1450.0,
+    "erro_absoluto_referencia_g": 1450.0,
+    "previsto_floresta_g": 4472.788987877235,
+    "erro_floresta_g": 1027.2110121227652,
+    "erro_absoluto_floresta_g": 1027.2110121227652,
+    "reducao_erro_absoluto_g": 422.78898787723483
+  },
+  "contagens_por_erro": [
+    {
+      "procedimento": "referencia",
+      "limite_g": 250,
+      "n_dentro": 9,
+      "n_total": 69,
+      "fracao_dentro": 0.13043478260869565
+    },
+    {
+      "procedimento": "referencia",
+      "limite_g": 500,
+      "n_dentro": 29,
+      "n_total": 69,
+      "fracao_dentro": 0.42028985507246375
+    },
+    {
+      "procedimento": "referencia",
+      "limite_g": 1000,
+      "n_dentro": 58,
+      "n_total": 69,
+      "fracao_dentro": 0.8405797101449275
+    },
+    {
+      "procedimento": "floresta",
+      "limite_g": 250,
+      "n_dentro": 36,
+      "n_total": 69,
+      "fracao_dentro": 0.5217391304347826
+    },
+    {
+      "procedimento": "floresta",
+      "limite_g": 500,
+      "n_dentro": 60,
+      "n_total": 69,
+      "fracao_dentro": 0.8695652173913043
+    },
+    {
+      "procedimento": "floresta",
+      "limite_g": 1000,
+      "n_dentro": 68,
+      "n_total": 69,
+      "fracao_dentro": 0.9855072463768116
+    }
+  ],
+  "intervalos_de_incerteza_estimados": false,
+  "nova_escolha_no_teste": false,
+  "versoes": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0"
+  }
+}

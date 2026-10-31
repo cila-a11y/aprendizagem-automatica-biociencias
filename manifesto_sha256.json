@@ -1,0 +1,1263 @@
+{
+  "descricao": "Material de apoio ao leitor; capítulos 5 a 15, sem o texto do livro.",
+  "data_preparacao": "2026-10-31",
+  "algoritmo": "SHA256",
+  "observacao": "Integridade dos ficheiros, não prova de autoria, pré-registo ou validade científica.",
+  "ficheiros": [
+    {
+      "ficheiro": "COMANDOS.txt",
+      "bytes": 5540,
+      "sha256": "3186a08cc1e20695ae290f469d322e920f93eac783501f3f62eeb713063da948"
+    },
+    {
+      "ficheiro": "FONTES_DADOS.txt",
+      "bytes": 3727,
+      "sha256": "3509b9491a119aa84909b62896d8235cce8dd9bf4b4c05dec0e7ee4e1d6ecb07"
+    },
+    {
+      "ficheiro": "LEIA-ME.txt",
+      "bytes": 4363,
+      "sha256": "edc87ef4c7ec2a62c1b130864a69d56318a6e3fb034c17268e1bc9ab4b9076b7"
+    },
+    {
+      "ficheiro": "VERIFICACAO_EXECUCAO.txt",
+      "bytes": 2823,
+      "sha256": "e3decc45202c635332e0da91986831aa18a73ac4fbaaa2613478f7996957cfe3"
+    },
+    {
+      "ficheiro": "cap05_06/LEIA-ME.txt",
+      "bytes": 1563,
+      "sha256": "6dca1eb1b6b4dd0d67ce32109070749c2f96c04255e9037d062d548dd2fe2c52"
+    },
+    {
+      "ficheiro": "cap05_06/codigo/gerar_figuras.py",
+      "bytes": 18025,
+      "sha256": "d7badbea608f1a5ec9e50ef8b785d643d98b9c1179378ce1748a0cc689472927"
+    },
+    {
+      "ficheiro": "cap05_06/codigo/preparar_dados.py",
+      "bytes": 1234,
+      "sha256": "66c4e748539d5a766778962587e653764d98ce77accd99004b86958fdc0ae9b1"
+    },
+    {
+      "ficheiro": "cap05_06/dados/penguins_desenvolvimento.csv",
+      "bytes": 14378,
+      "sha256": "8f3a9c1a2acef4ce13f8ba13cd30927194b0c30b73d83eaa82d65d269abb03d0"
+    },
+    {
+      "ficheiro": "cap05_06/dados/penguins_original.csv",
+      "bytes": 15241,
+      "sha256": "f204db2c753b0937caac3cb35258562c14f073e4bbc76be24b4c51ce22767a93"
+    },
+    {
+      "ficheiro": "cap05_06/figuras/png/u5_kmeans_escala.png",
+      "bytes": 167515,
+      "sha256": "c71a70a02d5987df70e12ac90ae92b6d6ef95375f1344f835b5b6897f05ef23a"
+    },
+    {
+      "ficheiro": "cap05_06/figuras/png/u5_kmeans_grupos.png",
+      "bytes": 110151,
+      "sha256": "c5afea9c271d3e4f957db106f0fee8c16c485e11d4beb9ca825cdbb78402d013"
+    },
+    {
+      "ficheiro": "cap05_06/figuras/png/u5_kmeans_iteracao.png",
+      "bytes": 51727,
+      "sha256": "452eda2a895102068f9a6a50a486c82c5b48bfe9a0e588f9bcbc3ad08effe217"
+    },
+    {
+      "ficheiro": "cap05_06/figuras/png/u5_silhueta.png",
+      "bytes": 94774,
+      "sha256": "66194ef313a66529994b89222439c78fee15ba4f83ab6dc341f71ad8a965ee03"
+    },
+    {
+      "ficheiro": "cap05_06/figuras/png/u6_acp_coeficientes.png",
+      "bytes": 53718,
+      "sha256": "d5e50bfaa6192d931fb1ae264076f8c984be43b03ba49e8d00d98b53074d53cf"
+    },
+    {
+      "ficheiro": "cap05_06/figuras/png/u6_acp_mapa.png",
+      "bytes": 160231,
+      "sha256": "eef36fcee2b0c65662a3225d932d5bba6b7d2876ce9c6575e180b155ef98b23a"
+    },
+    {
+      "ficheiro": "cap05_06/figuras/png/u6_acp_projecao.png",
+      "bytes": 99989,
+      "sha256": "32596bca61bdd430240cce48c13bbfac70dafc0f10edf782e78b3af18af82e78"
+    },
+    {
+      "ficheiro": "cap05_06/figuras/png/u6_variancia.png",
+      "bytes": 75345,
+      "sha256": "eebdf521450320e49eb81d8060f6122131db4472e4ab89f7cc04be6c6cf18bf7"
+    },
+    {
+      "ficheiro": "cap05_06/figuras/u5_kmeans_escala.pdf",
+      "bytes": 18878,
+      "sha256": "325a867228d0c2ad5f4be9278f47d3671462e6c60926e9a0818ed41d616f6898"
+    },
+    {
+      "ficheiro": "cap05_06/figuras/u5_kmeans_grupos.pdf",
+      "bytes": 15078,
+      "sha256": "fa7608ca7bd58ff0c2dd7f1a59f4f0e434340b1ba2e8c0c4fbd15c32af1d88f2"
+    },
+    {
+      "ficheiro": "cap05_06/figuras/u5_kmeans_iteracao.pdf",
+      "bytes": 14377,
+      "sha256": "494d2e8e1ee3b46f0de06aca5a5b38077c6f3aef115f8ab0bf703376e4be96d2"
+    },
+    {
+      "ficheiro": "cap05_06/figuras/u5_silhueta.pdf",
+      "bytes": 31373,
+      "sha256": "b3861e712f5cf1fab76cdd80f5854c8eac3f10240f28a1c0c1b6e91f8eb540d6"
+    },
+    {
+      "ficheiro": "cap05_06/figuras/u6_acp_coeficientes.pdf",
+      "bytes": 12036,
+      "sha256": "c721f4345cdbd996897e194d5339a6b6bc2d2e1b58067021fda877894ce1d583"
+    },
+    {
+      "ficheiro": "cap05_06/figuras/u6_acp_mapa.pdf",
+      "bytes": 19643,
+      "sha256": "7a915e540fcb1ff4c3595dbeaa08a92cd4d2c03e677d19383957edeca7f8510a"
+    },
+    {
+      "ficheiro": "cap05_06/figuras/u6_acp_projecao.pdf",
+      "bytes": 19321,
+      "sha256": "9cc9841a32a860ef892237c7dae497eef1e3eb79f5a2054c065ede0eafcc7fc2"
+    },
+    {
+      "ficheiro": "cap05_06/figuras/u6_variancia.pdf",
+      "bytes": 12316,
+      "sha256": "98a46d550988fe94e69c5e78ba8774e15016a20ad33dfd57d658af7ea58a3a4d"
+    },
+    {
+      "ficheiro": "cap05_06/resultados/acp_coeficientes.csv",
+      "bytes": 401,
+      "sha256": "d127c8066282b208ce11f4debafee42aaa57d2aa07ea59f7c950b9ebeff368d3"
+    },
+    {
+      "ficheiro": "cap05_06/resultados/acp_coordenadas.csv",
+      "bytes": 22675,
+      "sha256": "f4e87de0202f4ae0bfc88aef4b9c2f38aeb08f0471e8c35dcf9dc8dca3dacf8f"
+    },
+    {
+      "ficheiro": "cap05_06/resultados/acp_variancia.csv",
+      "bytes": 194,
+      "sha256": "8f9b6940f3447170c3e764c09a9fec6b1f69b3be3f9215a4fd10129a9c7cc047"
+    },
+    {
+      "ficheiro": "cap05_06/resultados/kmeans_perfis_k3.csv",
+      "bytes": 308,
+      "sha256": "9a283ae5921fb7dd671c26cb535a4832d174c7904719021e8d48f912b3da7d5b"
+    },
+    {
+      "ficheiro": "cap05_06/resultados/resultados_verificados.json",
+      "bytes": 2189,
+      "sha256": "8f5a242ed4facede59325365fd7b04ddf5387ea8eb226afc5c68c6ac8a53f325"
+    },
+    {
+      "ficheiro": "cap05_06/resultados/silhuetas_k2.csv",
+      "bytes": 6768,
+      "sha256": "d15da6ae7586fb523b8a7e521ea3383de6a5c58e3c1b464d40e87f9604053d53"
+    },
+    {
+      "ficheiro": "cap05_06/resultados/silhuetas_k3.csv",
+      "bytes": 6827,
+      "sha256": "4982d2cb563bda7da234c74d2df99f8d0480d0b6dc2029dfbf16f34c7f9e0d33"
+    },
+    {
+      "ficheiro": "cap05_06/resultados/silhuetas_k4.csv",
+      "bytes": 6835,
+      "sha256": "ad28c78a93496d9cbc3a6ad2444a66fcbe3652db09b5d3c7ff8b69ac74b5b247"
+    },
+    {
+      "ficheiro": "cap07/LEIA-ME.txt",
+      "bytes": 1142,
+      "sha256": "08e9a7849d871ece89795bd669250965f77895a0390aa1556b935fd0bd7b4cdd"
+    },
+    {
+      "ficheiro": "cap07/codigo/gerar_figuras.py",
+      "bytes": 20135,
+      "sha256": "793630f477cdd513f539b7d20a17508c8fa2a66f3a13c1687eadc8b38397b9e4"
+    },
+    {
+      "ficheiro": "cap07/dados/penguins_desenvolvimento.csv",
+      "bytes": 14378,
+      "sha256": "8f3a9c1a2acef4ce13f8ba13cd30927194b0c30b73d83eaa82d65d269abb03d0"
+    },
+    {
+      "ficheiro": "cap07/figuras/png/u7_ajuste_simples.png",
+      "bytes": 170419,
+      "sha256": "9269051e9ba4fbc54df7defdbb897164569178501ecaed6a643720f055764b98"
+    },
+    {
+      "ficheiro": "cap07/figuras/png/u7_diagnostico_validacao.png",
+      "bytes": 227054,
+      "sha256": "c73f98b389e4c6ad19b14346f8dcb62cdc839701fed5783d150c91c034910bcd"
+    },
+    {
+      "ficheiro": "cap07/figuras/png/u7_padroes_residuos.png",
+      "bytes": 144227,
+      "sha256": "00d32b76cff7f59fe8fa9e7c56f0910b06ab7313faee2a1517cd01cc693b316c"
+    },
+    {
+      "ficheiro": "cap07/figuras/u7_ajuste_simples.pdf",
+      "bytes": 16266,
+      "sha256": "0848a74e789a5984561e6fd94d1f9847198d931fde2f0aadfede7ce1984384f5"
+    },
+    {
+      "ficheiro": "cap07/figuras/u7_diagnostico_validacao.pdf",
+      "bytes": 20290,
+      "sha256": "6d9a63917fc941adbf76800d244134775214645570fdba95bbe3fecccffa88e2"
+    },
+    {
+      "ficheiro": "cap07/figuras/u7_padroes_residuos.pdf",
+      "bytes": 21989,
+      "sha256": "0c6473b5fa5211311505d6db4f5bbb388188696486003b93d43ed2cd644fb6a7"
+    },
+    {
+      "ficheiro": "cap07/resultados/atribuicao_partes.csv",
+      "bytes": 1578,
+      "sha256": "38c7aac0aa68f498fc77d99170b0b6132b650f2c91260f6f6cf7698f1e52d2e9"
+    },
+    {
+      "ficheiro": "cap07/resultados/coeficientes_ajustamento_completo.csv",
+      "bytes": 341,
+      "sha256": "bbeb54fbe567c39d87d6371ff61ff98f990bcb76e2e3d193a55a0d595d45e610"
+    },
+    {
+      "ficheiro": "cap07/resultados/metricas_por_parte.csv",
+      "bytes": 1688,
+      "sha256": "0c6f460bb9a937ec0bd2a81a6ce99527a4b62dac3020f8efe975793177d7ba79"
+    },
+    {
+      "ficheiro": "cap07/resultados/metricas_validacao.csv",
+      "bytes": 331,
+      "sha256": "ff2676688c8bedcad8a059ceaa02eb395c6c4f894f9516d84a3b4f1f5118f59e"
+    },
+    {
+      "ficheiro": "cap07/resultados/padroes_ficticios.csv",
+      "bytes": 18005,
+      "sha256": "6eceef0b8905376fec03fd085a2ca6f74eac4712b2e180afdea7da1e2c515bfe"
+    },
+    {
+      "ficheiro": "cap07/resultados/particoes_validacao.json",
+      "bytes": 14978,
+      "sha256": "c1a2acbd881ea64c9a38eb9c5d16325837140c4023cb846e3fe9341e537a7935"
+    },
+    {
+      "ficheiro": "cap07/resultados/previsoes_validacao.csv",
+      "bytes": 40913,
+      "sha256": "b3f73fe88c53b40c2bffa9763c85336869daed3bff895c5687e8533724bcbf43"
+    },
+    {
+      "ficheiro": "cap07/resultados/registos_destacados_ajustamento.csv",
+      "bytes": 181,
+      "sha256": "b4a558bbd1113fd2f7159721024f1e5f178c2a2f66e8e53fb3de0a7a5e815671"
+    },
+    {
+      "ficheiro": "cap07/resultados/resultados_verificados.json",
+      "bytes": 6638,
+      "sha256": "ec539f036912dc5fdeff3c720060d7380193fa549f467a513c7999bdc319f490"
+    },
+    {
+      "ficheiro": "cap08/LEIA-ME.txt",
+      "bytes": 1349,
+      "sha256": "804b00faa25153277d75f766273635d0fa9055d6d035f3d60a292bfbfcfae310"
+    },
+    {
+      "ficheiro": "cap08/codigo/gerar_figuras.py",
+      "bytes": 22642,
+      "sha256": "1235567a304b8d1b737d5595605ce91ca1562182c34e8c9f67b3c1b3734628ed"
+    },
+    {
+      "ficheiro": "cap08/codigo/preparar_dados.py",
+      "bytes": 3238,
+      "sha256": "ae2193f1dfdfd25a09a55581b2bb08280d4e93fea5c2430563289a0a8056fbf7"
+    },
+    {
+      "ficheiro": "cap08/dados/wisconsin_desenvolvimento.csv",
+      "bytes": 98882,
+      "sha256": "997edc11984a788044ef3ceb17595f0b77b1aac91a7186e8afd3c2dde3b6153d"
+    },
+    {
+      "ficheiro": "cap08/figuras/png/u8_fronteiras.png",
+      "bytes": 228194,
+      "sha256": "49ffdae27fad1af45fa77c3acdaf3981241e2d44f9c79a9dd44b3a89bd194b91"
+    },
+    {
+      "ficheiro": "cap08/figuras/png/u8_probabilidades.png",
+      "bytes": 169322,
+      "sha256": "3deccb503679e2a89a1972a25e267f7864768d770bc604f9b6caebfd20b99665"
+    },
+    {
+      "ficheiro": "cap08/figuras/png/u8_roc_construcao.png",
+      "bytes": 94466,
+      "sha256": "8fc28519fc17b6f2974cf3f3ca93e7fd343071a7fa41752cad858753e76f3631"
+    },
+    {
+      "ficheiro": "cap08/figuras/png/u8_sigmoide.png",
+      "bytes": 70388,
+      "sha256": "0191a3ac1f9b49aaaf9b7b46c6d7c2f6eec19809e0d87f7180be18bd137674b4"
+    },
+    {
+      "ficheiro": "cap08/figuras/png/u8b_roc.png",
+      "bytes": 120071,
+      "sha256": "2aa00e17ff69c499d24302f92a119de918e366cdaea9bc84fa4dd89f9c77089b"
+    },
+    {
+      "ficheiro": "cap08/figuras/u8_fronteiras.pdf",
+      "bytes": 44438,
+      "sha256": "74fd75d22a051b052f5ff7bb5a803d387a9614b3dde160d07ea16ef31d95a6e9"
+    },
+    {
+      "ficheiro": "cap08/figuras/u8_probabilidades.pdf",
+      "bytes": 22598,
+      "sha256": "70ab71511c3f6bb31aab50c7b1d661baffeede6485af73df0ed4241b077773ff"
+    },
+    {
+      "ficheiro": "cap08/figuras/u8_roc_construcao.pdf",
+      "bytes": 15484,
+      "sha256": "7093b1a515975ee3b9380fb618d4dd37af43a3076d5a4c4cbe9ee6fe1d925155"
+    },
+    {
+      "ficheiro": "cap08/figuras/u8_sigmoide.pdf",
+      "bytes": 12145,
+      "sha256": "90cfdaa2944fb96dd036486b999ea39c84a1ee8d05fe354da34f2e18a9375be8"
+    },
+    {
+      "ficheiro": "cap08/figuras/u8b_roc.pdf",
+      "bytes": 16318,
+      "sha256": "3dc296f352d4000811cf2a02b4ac7b08685b5a54b6be64ea32a6391bf97dfa95"
+    },
+    {
+      "ficheiro": "cap08/resultados/amostras_roc_ficticias.csv",
+      "bytes": 95,
+      "sha256": "a665b1e15e1b84c2ee3a46c183fb43bcb8db32c97ef9e813854ac2e1f7db09cf"
+    },
+    {
+      "ficheiro": "cap08/resultados/atribuicao_partes.csv",
+      "bytes": 2675,
+      "sha256": "0fc8d5ac42052951cb0181ed709fad09ea5b4199556a07a4f84cf3b401ee770c"
+    },
+    {
+      "ficheiro": "cap08/resultados/coeficientes_ajustamento_completo.csv",
+      "bytes": 213,
+      "sha256": "70e73e4662288732ec4e7ea23cff59747bdc578a1fbfd6ea7941bfff546fa908"
+    },
+    {
+      "ficheiro": "cap08/resultados/metricas_por_limiar.csv",
+      "bytes": 536,
+      "sha256": "ab69c1bb330d865df4b80ac6fa5c4535d83fabc8ad2826b89ad6aefdb35ace8c"
+    },
+    {
+      "ficheiro": "cap08/resultados/metricas_por_parte.csv",
+      "bytes": 823,
+      "sha256": "9b6473c75da217095a78776ccab84410665bcbe0633dd5a09aab77e6efc6b8cc"
+    },
+    {
+      "ficheiro": "cap08/resultados/particoes_validacao.json",
+      "bytes": 25013,
+      "sha256": "c52de8065ad81f86e1b9628490a67f28f744646e8e4050777f751e37c1396ad8"
+    },
+    {
+      "ficheiro": "cap08/resultados/previsoes_validacao.csv",
+      "bytes": 18905,
+      "sha256": "42bc21ecda451eb9c754ca0addb709ea928f3de3c7e8f4c4c9cd021088c90685"
+    },
+    {
+      "ficheiro": "cap08/resultados/proveniencia_dados.json",
+      "bytes": 911,
+      "sha256": "6cb58141c88242e8632f32fb601a0bcb334d7b94920308f6d44741daf7165564"
+    },
+    {
+      "ficheiro": "cap08/resultados/resultados_verificados.json",
+      "bytes": 4187,
+      "sha256": "9340e83816bd6c6f379f17e64ec828bfaa40d609ed3a601de3d0cb2787d4cda7"
+    },
+    {
+      "ficheiro": "cap08/resultados/roc_construcao_ficticia.csv",
+      "bytes": 383,
+      "sha256": "0b07c14766f490f921064159c7fc91103a287452dc3914c76be2e56bec65be59"
+    },
+    {
+      "ficheiro": "cap08/resultados/roc_validacao.csv",
+      "bytes": 23305,
+      "sha256": "3e3e26ec20575fe4891e023be9de109620942eb7019bd5818fd6a28e79d33871"
+    },
+    {
+      "ficheiro": "cap09_10/LEIA-ME.txt",
+      "bytes": 1487,
+      "sha256": "1f06b4e5f06b05765b22d2706e92d0536801199bd08f39193aabfb073263973a"
+    },
+    {
+      "ficheiro": "cap09_10/codigo/gerar_figuras.py",
+      "bytes": 18622,
+      "sha256": "dc3558954a0fd83c299ea29bacf14eca92944ebed101a0e23e454ed97a4e5889"
+    },
+    {
+      "ficheiro": "cap09_10/codigo/gerar_resultados.py",
+      "bytes": 21420,
+      "sha256": "52b6a99c5b49987a3c83d0d8649e172f7fe742432dae80b3f79d102430ebe2f2"
+    },
+    {
+      "ficheiro": "cap09_10/codigo/validar_dados.py",
+      "bytes": 1865,
+      "sha256": "44bdf66032a13317419abe4c196987c4339c4bbcd772433e51362527cf5ba668"
+    },
+    {
+      "ficheiro": "cap09_10/dados/penguins_desenvolvimento.csv",
+      "bytes": 14378,
+      "sha256": "8f3a9c1a2acef4ce13f8ba13cd30927194b0c30b73d83eaa82d65d269abb03d0"
+    },
+    {
+      "ficheiro": "cap09_10/dados/wisconsin_desenvolvimento.csv",
+      "bytes": 98882,
+      "sha256": "997edc11984a788044ef3ceb17595f0b77b1aac91a7186e8afd3c2dde3b6153d"
+    },
+    {
+      "ficheiro": "cap09_10/figuras/png/u10_agregacao.png",
+      "bytes": 104796,
+      "sha256": "aa282064093ae33cd293da8a3dcb93a39087c567cd2f9dbd9ad62583067f674e"
+    },
+    {
+      "ficheiro": "cap09_10/figuras/png/u10_bootstrap.png",
+      "bytes": 132178,
+      "sha256": "d5e8ed29433c27de5a847db8b0ae3962019a2dace70eead4591e5aa552a08bb3"
+    },
+    {
+      "ficheiro": "cap09_10/figuras/png/u10_comparacao.png",
+      "bytes": 166854,
+      "sha256": "ed1014589b976012216c23666b9145e8c8d102fc5005dda6111c7fd8f8bf159c"
+    },
+    {
+      "ficheiro": "cap09_10/figuras/png/u9_arvore_classificacao.png",
+      "bytes": 184075,
+      "sha256": "d6558e2f83cab4ec9d7eb31b7d6914bf7cbd2030c8215ab3df0d68f75d84380d"
+    },
+    {
+      "ficheiro": "cap09_10/figuras/png/u9_arvore_regressao.png",
+      "bytes": 136954,
+      "sha256": "a7927c51437a20ebbb60e2e33df079d274c442202ad4e4dd1534af00eb42e7eb"
+    },
+    {
+      "ficheiro": "cap09_10/figuras/png/u9_complexidade.png",
+      "bytes": 129262,
+      "sha256": "62daa61976f96d80c72313c422df743c4a6325342e1466dec2af308d897820cd"
+    },
+    {
+      "ficheiro": "cap09_10/figuras/png/u9_regioes_classificacao.png",
+      "bytes": 157065,
+      "sha256": "7f577d2ee45ed9a55296e39ceb07cbd0a9420a127d9dc416dd64a2f9b990d380"
+    },
+    {
+      "ficheiro": "cap09_10/figuras/u10_agregacao.pdf",
+      "bytes": 15436,
+      "sha256": "1ba893333b9c3f1a2100ecf3b7744753ad77cad2fdb7d90c438f335f988ff734"
+    },
+    {
+      "ficheiro": "cap09_10/figuras/u10_bootstrap.pdf",
+      "bytes": 20478,
+      "sha256": "d11c8399c170e679b365749877b6e3c79d13b3ffebe2d6e918a3f247d612fb81"
+    },
+    {
+      "ficheiro": "cap09_10/figuras/u10_comparacao.pdf",
+      "bytes": 20121,
+      "sha256": "e0711f684f113544308c64d4b6081d13c812d9abb378c89dd0a6070d50e3c2ce"
+    },
+    {
+      "ficheiro": "cap09_10/figuras/u9_arvore_classificacao.pdf",
+      "bytes": 15369,
+      "sha256": "4f85637ec0329c06aa0f38d727e41519ca3fbd8aa21c7c664ab7a669607781db"
+    },
+    {
+      "ficheiro": "cap09_10/figuras/u9_arvore_regressao.pdf",
+      "bytes": 13773,
+      "sha256": "2d4ff50e41715c7cb08398d8512c7c31b17aeb1852562c22f04b243e6106d6ef"
+    },
+    {
+      "ficheiro": "cap09_10/figuras/u9_complexidade.pdf",
+      "bytes": 16477,
+      "sha256": "a778a96f6a4d58e7c7ef38ae1d15c4ec1f9ad35d3b383ac39a8f28bd122996e4"
+    },
+    {
+      "ficheiro": "cap09_10/figuras/u9_regioes_classificacao.pdf",
+      "bytes": 28128,
+      "sha256": "7efa7ba57fec54208cc277f3c35015650eccf7516074689629532869043fcd3b"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/agregacao_classificacao.json",
+      "bytes": 509,
+      "sha256": "d42620162a226479ae82b31ac750995ed66eeed3dba24dfc9e754301a002b43f"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/agregacao_classificacao_arvores.csv",
+      "bytes": 4395,
+      "sha256": "aa2bfff6adec41d2d958b47c1d9a8ab5ab3c642c9a508552955e7c36fcc75422"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/agregacao_classificacao_histograma.csv",
+      "bytes": 239,
+      "sha256": "58c8fa43d927d3d1fe63b06079b461048c4ac552000155806c56779cf9a36663"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/agregacao_regressao.json",
+      "bytes": 525,
+      "sha256": "64b9c47d2c02037636a5182efc18ddad0dfc5a93245c8ea2305d86d4ff97e6ef"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/agregacao_regressao_arvores.csv",
+      "bytes": 5284,
+      "sha256": "fc19f12bdc37f82b256b4013e83a27a880582d153fff21528d1d3fb1debbf135"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/agregacao_regressao_histograma.csv",
+      "bytes": 204,
+      "sha256": "8ee6c488c8648a359ca3058bed94a55464ae3b017c4fabfd81e35403f36275a9"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/arvore_classificacao_completa.json",
+      "bytes": 18601,
+      "sha256": "72c14cc8f993837b1614bea189522de8385f6ced3ff3df3bb3eb6441e0738143"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/arvore_classificacao_folhas_por_registo.csv",
+      "bytes": 3584,
+      "sha256": "a212359be50a92fac7c315a4385c6db8fa2aebf821f7a1b9ad6c719982f64432"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/arvore_classificacao_nos.csv",
+      "bytes": 667,
+      "sha256": "1402c9a7711e8f7b27210f50d3f076725f3572d41308905c3b0f7b9c6dadb4f6"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/arvore_regressao_completa.json",
+      "bytes": 11988,
+      "sha256": "a3e9c3a793c0bccda84d848bb446bde274ec8996b603af295dfc370a31415e0b"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/arvore_regressao_folhas_por_registo.csv",
+      "bytes": 2123,
+      "sha256": "6679109d3f70836722754a5e5ff27d89c73540b583432b357ba13fb72fa94c23"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/arvore_regressao_nos.csv",
+      "bytes": 515,
+      "sha256": "150e3a3c3254d1d1f89b4bf5c646b98cf6b99c8c73b8f8ad1ee0089607a8559c"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/bootstrap_ficticio.json",
+      "bytes": 967,
+      "sha256": "342efa4dfbf35e61a02dddb4a81ae918f3feff39342ff2a24eb4459411cc5362"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/bootstrap_ficticio_multiplicidades.csv",
+      "bytes": 185,
+      "sha256": "cfd845cec581ac9a0bbb715e1511e0f0fdabdc0a602fb4d0dd2808d7aad5b007"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/bootstrap_ficticio_posicoes.csv",
+      "bytes": 186,
+      "sha256": "3121ddad2e7002f36d005df14d63bde5131e136b8776d6f9ced3485673a8c510"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/metricas_classificacao_por_parte.csv",
+      "bytes": 4473,
+      "sha256": "49b57f1ffcaa00c04ac41bbd39ee39e0cb1eb52d4c8468fc113ce17f007c5c1d"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/metricas_classificacao_previsoes_reunidas.csv",
+      "bytes": 610,
+      "sha256": "f9834d4b893ff0103eb8903760452c23deaff1a1995a2e621107593e264ff509"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/metricas_regressao_por_parte.csv",
+      "bytes": 4301,
+      "sha256": "f56642d49a58c004ec0c06af7c7c550c9a8f8809f196812e1b550d61542df2ae"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/metricas_regressao_previsoes_reunidas.csv",
+      "bytes": 548,
+      "sha256": "e9d66d64605eb8b90d818896241a3255517c40136099b0f8479a74ab6321b7b3"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/particoes_classificacao.json",
+      "bytes": 25233,
+      "sha256": "a39ebe145beb0ce6142101b8cd6fbf46475c0f088b333daa3052b519cee3d13f"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/particoes_regressao.json",
+      "bytes": 15198,
+      "sha256": "8851f69db7075dbdad339927c46469c0a2069cc43b760ee5b5176372e48aecf2"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/permutacao_diminuicoes_AUC.csv",
+      "bytes": 1425,
+      "sha256": "46dba57fd662f24f526898663969112f34a5f9bfeb5ae547c574a0e967322df7"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/permutacao_resumo.json",
+      "bytes": 4646,
+      "sha256": "f7f6f49e86397727cd292608d9aa39773e508f909e751de63f3650daf7fcd37c"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/previsoes_classificacao_validacao.csv",
+      "bytes": 42180,
+      "sha256": "3553c73fc0a06687ab73b517a63118a8bb320cd30c7a1f23a8934770da297132"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/previsoes_regressao_validacao.csv",
+      "bytes": 32054,
+      "sha256": "86303896ee988fde1aa2ce2f9a67506cf5e77409e3b7f311921100f56c63748b"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/resultados_verificados.json",
+      "bytes": 55233,
+      "sha256": "6af895aa6cb84827a52896cc59cbb55a110f63694db6b82f99536e5809841ec8"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/resumo_classificacao_medias_partes.csv",
+      "bytes": 1239,
+      "sha256": "a3956240432ea2ab158ac4a4387fef4f79a5bd67a89d2f927ac008e20334ec12"
+    },
+    {
+      "ficheiro": "cap09_10/resultados/resumo_regressao_medias_partes.csv",
+      "bytes": 1465,
+      "sha256": "9350df556b6291c68f0ef8cf1e4cf4d6b4470ba1de9948f28b2a2721b18396fd"
+    },
+    {
+      "ficheiro": "cap11/LEIA-ME.txt",
+      "bytes": 2016,
+      "sha256": "3fe78032b1ef7524a260ca675d7348e71819e91c3c9a68697e766c0abfd2bc21"
+    },
+    {
+      "ficheiro": "cap11/codigo/gerar_figuras.py",
+      "bytes": 13524,
+      "sha256": "72bccfefba0db843b7415272df0d14d057f258095f0e06a8af58a8560cf509e9"
+    },
+    {
+      "ficheiro": "cap11/codigo/gerar_resultados.py",
+      "bytes": 15957,
+      "sha256": "75c538925ddf410a91bee3ddeffc1ea9954c406c34cd2ebeda7c2124c3b5c8da"
+    },
+    {
+      "ficheiro": "cap11/dados/wisconsin_desenvolvimento.csv",
+      "bytes": 98882,
+      "sha256": "997edc11984a788044ef3ceb17595f0b77b1aac91a7186e8afd3c2dde3b6153d"
+    },
+    {
+      "ficheiro": "cap11/figuras/png/u11_arquitetura.png",
+      "bytes": 248224,
+      "sha256": "c71bf87f19ecc38834b8639e629cce1a90f1c13449a1dd71af642e745d4a3259"
+    },
+    {
+      "ficheiro": "cap11/figuras/png/u11_comparacao.png",
+      "bytes": 70905,
+      "sha256": "b2782c68171e3a78cc2c81940e7cd9f9d484b04d39e4a1205e1e426da13ea9a4"
+    },
+    {
+      "ficheiro": "cap11/figuras/png/u11_curvas.png",
+      "bytes": 171220,
+      "sha256": "a014d16974939eef044bbaabc3fc7524e446e1c657228fdc7a4815d09769bb54"
+    },
+    {
+      "ficheiro": "cap11/figuras/png/u11_probabilidades.png",
+      "bytes": 275195,
+      "sha256": "2a05bf49ef57ff2a6103d69b2c0275a03ec29d9410c2c0219c6106c0f580e798"
+    },
+    {
+      "ficheiro": "cap11/figuras/png/u11_relu.png",
+      "bytes": 76581,
+      "sha256": "1f1df33d138b78a7686757c225f0851801d87d9ecfd3ae3922a9f51dcccfe1ca"
+    },
+    {
+      "ficheiro": "cap11/figuras/u11_arquitetura.pdf",
+      "bytes": 25609,
+      "sha256": "f69c94d1cc3d0ad627b4c2e46582432cfc0b4a3a04f39749dde832ffc293ac63"
+    },
+    {
+      "ficheiro": "cap11/figuras/u11_comparacao.pdf",
+      "bytes": 15636,
+      "sha256": "ce5b3f5098416d03eef5ec590df8f796bc38058426847ed7c6b0209951270f0b"
+    },
+    {
+      "ficheiro": "cap11/figuras/u11_curvas.pdf",
+      "bytes": 20819,
+      "sha256": "15be7fd29e7d28a463f876fa0d6e3ba6cafa534317464835abf6d5b8a8d48239"
+    },
+    {
+      "ficheiro": "cap11/figuras/u11_probabilidades.pdf",
+      "bytes": 191176,
+      "sha256": "233117e40ee932cab9de78ea4312052eac091876a11966347b2ece7608c0d7ec"
+    },
+    {
+      "ficheiro": "cap11/figuras/u11_relu.pdf",
+      "bytes": 17063,
+      "sha256": "03c1be54ec95778542e33a398f018714ecdb19e858cd0a4fcc5999a83030f75d"
+    },
+    {
+      "ficheiro": "cap11/resultados/ajustes_validacao.json",
+      "bytes": 98251,
+      "sha256": "4bf7ee406c4e21cfbb037d3491e9fcde33dddf88487f3c8533ee173b4580a257"
+    },
+    {
+      "ficheiro": "cap11/resultados/curvas_rede_32.csv",
+      "bytes": 30718,
+      "sha256": "caa03266281b46eed86df91af6cce2bf8c700c19633f7f51b0fc7a6e0c7b616f"
+    },
+    {
+      "ficheiro": "cap11/resultados/curvas_rede_32_epocas_selecionadas.csv",
+      "bytes": 1082,
+      "sha256": "9c53b1b1dbe6fe21182bb79832f60bececd63c0ff0e2e6f2ee7ffbe199a3a6c2"
+    },
+    {
+      "ficheiro": "cap11/resultados/curvas_rede_8.csv",
+      "bytes": 30572,
+      "sha256": "ea5b6c57f165d53fa08cf0f0a97953302bf3f47de9689c14a00229b30fba8dc6"
+    },
+    {
+      "ficheiro": "cap11/resultados/curvas_rede_8_epocas_selecionadas.csv",
+      "bytes": 1083,
+      "sha256": "f12ae1d6bbb4f9b39aee879ea2c3751e61dc948f39b93b844adfe020a1d58d85"
+    },
+    {
+      "ficheiro": "cap11/resultados/curvas_redes.csv",
+      "bytes": 61114,
+      "sha256": "8a34d79f4691b28e48ab536ad33c373c73268eea3e83d9615608756b9e5bd6e7"
+    },
+    {
+      "ficheiro": "cap11/resultados/metricas_classificacao_por_parte.csv",
+      "bytes": 3897,
+      "sha256": "cdbcc78c7ed95f71a76d49ed620a4af9cb3dc89074b9d428e8fb741ed8b96b63"
+    },
+    {
+      "ficheiro": "cap11/resultados/metricas_classificacao_previsoes_reunidas.csv",
+      "bytes": 476,
+      "sha256": "fdbae51ca275dbac6d263e020f47fc04d9831872600edb1624d203f91c0c352f"
+    },
+    {
+      "ficheiro": "cap11/resultados/particao_curvas.json",
+      "bytes": 4406,
+      "sha256": "1e07bed2959fdb464724227d21d813bb5e86b1e91762461303ac57d81ff5ab1c"
+    },
+    {
+      "ficheiro": "cap11/resultados/particoes_classificacao.json",
+      "bytes": 25233,
+      "sha256": "d5fbddc0f57f784411fdccceb5e9eaba6033e8857c0eea704d7e6211c2efb351"
+    },
+    {
+      "ficheiro": "cap11/resultados/previsoes_classificacao_validacao.csv",
+      "bytes": 44614,
+      "sha256": "194c80c76582b478e1c3661997899fde6a3e664a5024459376adfadff181971c"
+    },
+    {
+      "ficheiro": "cap11/resultados/rede_32_ajustamento_completo.json",
+      "bytes": 5234,
+      "sha256": "731c90e00764b2b15874d8ac8465e3539b55ae71965cc06bdb74e1ab25f1440c"
+    },
+    {
+      "ficheiro": "cap11/resultados/rede_32_probabilidades_ajustamento.csv",
+      "bytes": 17098,
+      "sha256": "f393d66b1236cd16a0b4b1ba1fef149aee5c7c6b18490fe2b34fdd3fa311ea31"
+    },
+    {
+      "ficheiro": "cap11/resultados/rede_8_ajustamento_completo.json",
+      "bytes": 2090,
+      "sha256": "801c32719673aab95d73c4a67efdef91ab95a3f60d8afdb26a3e283b0a5bbe2b"
+    },
+    {
+      "ficheiro": "cap11/resultados/rede_8_probabilidades_ajustamento.csv",
+      "bytes": 17073,
+      "sha256": "43e7666aef18413a9325048b23e499968d5ff593434e365961260e19ff2f4ffc"
+    },
+    {
+      "ficheiro": "cap11/resultados/resultados_verificados.json",
+      "bytes": 18884,
+      "sha256": "9cc751089c4cc3bc6da10d7322953ae2bf174b659151beb08fc5c5a63ee19c80"
+    },
+    {
+      "ficheiro": "cap11/resultados/resumo_classificacao_medias_partes.csv",
+      "bytes": 1323,
+      "sha256": "d291bfe20cb4d2ed4adff7fc3ec38c442f49f96c73bca157236ab7ef11b0fea4"
+    },
+    {
+      "ficheiro": "cap11/resultados/resumo_curvas.json",
+      "bytes": 2415,
+      "sha256": "6497bc0eff22605b5f17ecfd603ff0debff5f2b991913b36235ef6ca6b44c619"
+    },
+    {
+      "ficheiro": "cap11/resultados/superficies_probabilidade.npz",
+      "bytes": 556315,
+      "sha256": "c2e1fad95a775acd07d8426608f0b3d2595c595d4531164c03928eef2116bc9d"
+    },
+    {
+      "ficheiro": "cap12_13/LEIA-ME.txt",
+      "bytes": 2124,
+      "sha256": "bc1790d35c99882a5e9d824020631b361868451d5e784c73f398308f59fa2ab8"
+    },
+    {
+      "ficheiro": "cap12_13/codigo/gerar_figuras_12.py",
+      "bytes": 11794,
+      "sha256": "85be0fcecca0ffeac12625e056db0975a580a5fdd8285a6a3a47e7fbd7e34092"
+    },
+    {
+      "ficheiro": "cap12_13/codigo/gerar_figuras_13.py",
+      "bytes": 12105,
+      "sha256": "e087316c2584e63008c13735621c01045017ccd8e6bd7a24b8bdf9e59ffa5c4b"
+    },
+    {
+      "ficheiro": "cap12_13/codigo/gerar_resultados.py",
+      "bytes": 23525,
+      "sha256": "fa2895c014c117fcce5a38dfaa03babe3e3c99f48025b4b5168ed50a81b727a1"
+    },
+    {
+      "ficheiro": "cap12_13/dados/penguins_desenvolvimento.csv",
+      "bytes": 14378,
+      "sha256": "8f3a9c1a2acef4ce13f8ba13cd30927194b0c30b73d83eaa82d65d269abb03d0"
+    },
+    {
+      "ficheiro": "cap12_13/dados/wisconsin_desenvolvimento.csv",
+      "bytes": 98882,
+      "sha256": "997edc11984a788044ef3ceb17595f0b77b1aac91a7186e8afd3c2dde3b6153d"
+    },
+    {
+      "ficheiro": "cap12_13/figuras/png/u12_grupos.png",
+      "bytes": 65057,
+      "sha256": "12b35b5ce568a5ef033645cf93914dafca438f8a53fa83828f8593da2e03373e"
+    },
+    {
+      "ficheiro": "cap12_13/figuras/png/u12_tempo.png",
+      "bytes": 150688,
+      "sha256": "ab17b94541bfd40dff1ac934a5c79b93338f7e14f3eb5d0c9a2b96e1d5e78fed"
+    },
+    {
+      "ficheiro": "cap12_13/figuras/png/u12_validacao_aninhada.png",
+      "bytes": 214254,
+      "sha256": "6ffd7670f7e01c8a5f3bd6e8d349b7b9f60c87afb1cd6e9b2fe8bd97857f8b9f"
+    },
+    {
+      "ficheiro": "cap12_13/figuras/png/u13_calibracao.png",
+      "bytes": 117330,
+      "sha256": "3f39c610afab846276e9316b94c1a140799604984a97cff3f529ceca15eaa46f"
+    },
+    {
+      "ficheiro": "cap12_13/figuras/png/u13_dependencia.png",
+      "bytes": 150775,
+      "sha256": "d4155b4d668b822e2b2b5285f56a401b85b790bd88cdb23b9a392f1e90eddbbd"
+    },
+    {
+      "ficheiro": "cap12_13/figuras/png/u13_erros_especies.png",
+      "bytes": 137406,
+      "sha256": "5ba4ce1654dfe19e40bb19818dd7f0bff0c6c7689282b9afa0a513aeacdb775d"
+    },
+    {
+      "ficheiro": "cap12_13/figuras/png/u13_permutacao.png",
+      "bytes": 80299,
+      "sha256": "98030072fd35eb79a46949705505a6db6925ceb17cb499bdf1714ce12f9a991e"
+    },
+    {
+      "ficheiro": "cap12_13/figuras/u12_grupos.pdf",
+      "bytes": 14824,
+      "sha256": "874b524c007ea182b051ee26f9e88f7997fa08961b4f689846d7fe3646fcc9d1"
+    },
+    {
+      "ficheiro": "cap12_13/figuras/u12_tempo.pdf",
+      "bytes": 21179,
+      "sha256": "d4b9cebafbb659068a2dead76fb63b3f8c2efd7123d3abe089405e4c8a204840"
+    },
+    {
+      "ficheiro": "cap12_13/figuras/u12_validacao_aninhada.pdf",
+      "bytes": 23205,
+      "sha256": "5bf75b319c934ad66c6d2d8fc97e963bd2a73434af5ff67a99b82f4bde8f6af5"
+    },
+    {
+      "ficheiro": "cap12_13/figuras/u13_calibracao.pdf",
+      "bytes": 19713,
+      "sha256": "6263a0a5c4b10215e3b0aca6624df389270cd708a488403c87bce3ca5d44b689"
+    },
+    {
+      "ficheiro": "cap12_13/figuras/u13_dependencia.pdf",
+      "bytes": 22373,
+      "sha256": "f0d905620ef54c4f4eae983c74c10385a4c6e7acf45843aa000c378ef75d0534"
+    },
+    {
+      "ficheiro": "cap12_13/figuras/u13_erros_especies.pdf",
+      "bytes": 19838,
+      "sha256": "faa13b9743c17d0ff2a5a3e2269a2bba06afa1434310bd93868baba63a6a6150"
+    },
+    {
+      "ficheiro": "cap12_13/figuras/u13_permutacao.pdf",
+      "bytes": 15562,
+      "sha256": "84bdeef10aa3ae4f80dce232f0236f2758d15684a708d84922dda4024f9bf4b1"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/ajustes_logistica.json",
+      "bytes": 2416,
+      "sha256": "063b5a776ffd5642fd60f679ec9ffde7a3048077ae2765a2dedc1e3aa8b8f0ec"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/aninhada_ajustes.json",
+      "bytes": 2036,
+      "sha256": "9c405c623b3af5fdadba87f957e55fab8e1adad2972d0343c7af3dd3968a3c19"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/aninhada_particoes.json",
+      "bytes": 135211,
+      "sha256": "ace0fa02704b5199ee46e90192ffb5661b48266229745e9876a819b91ef4b6c2"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/aninhada_pesquisas_internas.csv",
+      "bytes": 1901,
+      "sha256": "7c2373834d65b22931dc324f834ad7b5150c85834d988b9ef58326d0e9c00dd0"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/aninhada_por_parte.csv",
+      "bytes": 687,
+      "sha256": "0b03a575649ee014f1f815a8c73dbee1cf8a63fa10adecd8a610b55f956b22a8"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/aninhada_previsoes_reunidas.csv",
+      "bytes": 11948,
+      "sha256": "5c008319b3670814d2c0f0b16bf8c6a3892aea95ac89b7b65320407457f11db4"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/aninhada_resumo.json",
+      "bytes": 531,
+      "sha256": "89034fdacd437beead954c246dc0a4a5cc3fc61a629847a558f1b0db6509c4d7"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/avisos.json",
+      "bytes": 1431,
+      "sha256": "d15b5690acf3c521e2dbaeee0d338f0c5de32766e471cbc57ecd1a296bbcee40"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/calibracao_faixas.csv",
+      "bytes": 700,
+      "sha256": "00b7915d90d792010ddc0b50cb0fe8cf045991b8dcb667e4849ed2e1e284f13b"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/classificacao_metricas_reunidas.csv",
+      "bytes": 215,
+      "sha256": "ce7efa9699c40408a6427b91fe10a5f17e0ae7d714b9b5b9ad9358f5da7d3530"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/classificacao_por_parte.csv",
+      "bytes": 1024,
+      "sha256": "f4b26156cbb1f5034fa8c5a6a66cc4da251fdd42d4c71a03bb133101bfeee81e"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/classificacao_previsoes_reunidas.csv",
+      "bytes": 26478,
+      "sha256": "0242de294a477cb75eb223189fec3eb01b03ce9496ce2b1040d7c5d32fb42588"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/classificacao_resumo_partes.csv",
+      "bytes": 236,
+      "sha256": "fde76715a62f4c7d17c3e72f35ac603fb59f88f8ef2976b966a2ada415f86b93"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/correlacoes.csv",
+      "bytes": 333,
+      "sha256": "e8d6fdeafc7de59bd9a56780219e8d2cd1014246a344cc7ba2cfd8158dafcf40"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/dependencia_geometria.csv",
+      "bytes": 17478,
+      "sha256": "a801b26f3cd91f07c1efa22f8c61d6d8b101ca7e763584d4bd8ea670c70d97dc"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/dependencia_permutacao.json",
+      "bytes": 1448,
+      "sha256": "b2254003ce47c2f506cf1be7d054e8cc497f275793947e1f877ce66e2f2f3d0f"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/exemplo_ficticio_auc.csv",
+      "bytes": 55,
+      "sha256": "c95a19d87bd04df54306991c9cc652bec89b6ae8bb63a7cb62189756af531e14"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/exemplo_ficticio_erros.csv",
+      "bytes": 31,
+      "sha256": "a7d267724138c91f005cf1040a1ddf6046362a8f3087012045c75a20a230b1b0"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/exemplo_ficticio_particoes_grupos.json",
+      "bytes": 645,
+      "sha256": "3695437ee1e45b235475a6b8d34e518acdbb43cd6f0fe8f8f21fafd801d6d020"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/exemplos_ficticios.json",
+      "bytes": 565,
+      "sha256": "23b5b1777a0c3a6bf59b2624ebf598be83875be938c678a697be9365e50c5099"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/particao_permutacao.json",
+      "bytes": 4227,
+      "sha256": "6113433c322c032e77b7b85749975972b384e008f0dfecd8e9eaecdc5ba44931"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/particoes_classificacao.json",
+      "bytes": 25013,
+      "sha256": "c52de8065ad81f86e1b9628490a67f28f744646e8e4050777f751e37c1396ad8"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/particoes_regressao.json",
+      "bytes": 14978,
+      "sha256": "c1a2acbd881ea64c9a38eb9c5d16325837140c4023cb846e3fe9341e537a7935"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/permutacao_previsoes_validacao.csv",
+      "bytes": 4993,
+      "sha256": "5c118dd31bf4bfd62b0e2209b9a0b902856a20df423d9266698ed4c4ed11d926"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/permutacao_repeticoes.csv",
+      "bytes": 2836,
+      "sha256": "dc7b7c47a448d33dbda3b4f78ca24356569213595cd047bb5bfbbbeaf194c02d"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/permutacao_resumo.csv",
+      "bytes": 213,
+      "sha256": "c456d772d0fbb53888cdb7c802b50daa7fcb500df594ab2018e1531d9aeb8a76"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/regressao_erros_especies.csv",
+      "bytes": 218,
+      "sha256": "b6ecad99f369d2d119cc13ee04472bd3e49186dc87a17b4c7d8db0643410b35f"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/regressao_por_parte.csv",
+      "bytes": 750,
+      "sha256": "8a1101ba858fde054ee61c756119e3ac71ea813ae91348c4c44f0ac9ff83c9d3"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/regressao_previsoes_reunidas.csv",
+      "bytes": 25940,
+      "sha256": "bf6794f9c883628aca4e420c7ffa519537473c0d844bcc2534dc3a02b89a9d24"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/regressao_resumos.csv",
+      "bytes": 587,
+      "sha256": "ad7364041dc52a4bab954dcdea5b7a995cff424279c3d1014e9ee5cfcdccd87e"
+    },
+    {
+      "ficheiro": "cap12_13/resultados/resultados_verificados.json",
+      "bytes": 6075,
+      "sha256": "8033739b99c9d1cfb397ac4a4f2df7bacecd4a87de4c55c295a272fe34144c0c"
+    },
+    {
+      "ficheiro": "cap14_15/LEIA-ME.txt",
+      "bytes": 3206,
+      "sha256": "b6a9302dfc121a7eb3e574a4138d38ca5531acc70060a88610434ddb5400516e"
+    },
+    {
+      "ficheiro": "cap14_15/codigo/avaliar_teste_final.py",
+      "bytes": 9693,
+      "sha256": "52d7acb81d0b13cec2673e1ba126d079ed74793e49d1b18fccc7e8b33a70d79e"
+    },
+    {
+      "ficheiro": "cap14_15/codigo/gerar_figuras.py",
+      "bytes": 17925,
+      "sha256": "f6d0f9bbda8266dd6f5870eca22cc8ae5f20a6f781afade9c2d0ec489953b49b"
+    },
+    {
+      "ficheiro": "cap14_15/codigo/modelos.py",
+      "bytes": 7212,
+      "sha256": "899a38373912b37b334760a3c5ebb04909876da70a5cb98698c19d813768d0a3"
+    },
+    {
+      "ficheiro": "cap14_15/codigo/preparar_dados.py",
+      "bytes": 3848,
+      "sha256": "6d4067f05c6cd2e47855e07bb0118085a11fcc939b913bc97dd29bde0877f019"
+    },
+    {
+      "ficheiro": "cap14_15/codigo/selecionar_desenvolvimento.py",
+      "bytes": 6868,
+      "sha256": "695788b156244dfbee104e4abd60ff91cfdaef44d4398905363c60ee059842e9"
+    },
+    {
+      "ficheiro": "cap14_15/codigo/verificar_resultados.py",
+      "bytes": 11260,
+      "sha256": "445fae38f209300433a62df71fc5172675b467fc6efe99a2245fbafa7218ecfe"
+    },
+    {
+      "ficheiro": "cap14_15/dados/penguins_desenvolvimento.csv",
+      "bytes": 14378,
+      "sha256": "8f3a9c1a2acef4ce13f8ba13cd30927194b0c30b73d83eaa82d65d269abb03d0"
+    },
+    {
+      "ficheiro": "cap14_15/dados/penguins_original.csv",
+      "bytes": 15241,
+      "sha256": "f204db2c753b0937caac3cb35258562c14f073e4bbc76be24b4c51ce22767a93"
+    },
+    {
+      "ficheiro": "cap14_15/dados/penguins_teste_reservado.csv",
+      "bytes": 3730,
+      "sha256": "81e9a7144788f1a2ab734c5b6fe445c1a93dd4174af4f9a5441b8862a83d65b4"
+    },
+    {
+      "ficheiro": "cap14_15/dados/wisconsin_desenvolvimento.csv",
+      "bytes": 98882,
+      "sha256": "997edc11984a788044ef3ceb17595f0b77b1aac91a7186e8afd3c2dde3b6153d"
+    },
+    {
+      "ficheiro": "cap14_15/dados/wisconsin_teste_reservado.csv",
+      "bytes": 25187,
+      "sha256": "31bda54e64c273d21ec42ec4a080f6ac7fab36cf2709891ea7a7df3239d09ade"
+    },
+    {
+      "ficheiro": "cap14_15/figuras/u14_classificacao.pdf",
+      "bytes": 22330,
+      "sha256": "b1ad89e3227092be00d1633cdf5bc8407627e0b1aa7fe6da499af208b8b9631c"
+    },
+    {
+      "ficheiro": "cap14_15/figuras/u14_classificacao.png",
+      "bytes": 172176,
+      "sha256": "310b4ddf74cdd2d5be156c1a3be39a98613bf26bf7ccca6639ed4aa4911123e7"
+    },
+    {
+      "ficheiro": "cap14_15/figuras/u14_regressao.pdf",
+      "bytes": 23559,
+      "sha256": "eaa955396141a3e70233e64c3bb3c3edb1c32b86112da1c2c6e31c0aa841aaab"
+    },
+    {
+      "ficheiro": "cap14_15/figuras/u14_regressao.png",
+      "bytes": 230279,
+      "sha256": "f996710ce07a6240acc8d106c36920d9e9be80624846808fc89df83b606b7794"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/ajustamentos_finais.json",
+      "bytes": 6915,
+      "sha256": "449ae9574408042cf55b034555f6332f5207bfe79c0c167a8cdfa700efb96533"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/avisos_desenvolvimento.json",
+      "bytes": 2238,
+      "sha256": "f65e2ea66b3c394d4d871395b853023522b7a5aad7daf2dcf43c91c606e5c535"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/avisos_teste.json",
+      "bytes": 296,
+      "sha256": "4338523b7394ab344affa9b4a25dfa211066d997135c19e11afe2bd545f1eabe"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/classificacao_particoes.json",
+      "bytes": 25233,
+      "sha256": "a39ebe145beb0ce6142101b8cd6fbf46475c0f088b333daa3052b519cee3d13f"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/classificacao_teste_medidas.csv",
+      "bytes": 341,
+      "sha256": "2eeb9375fb4133b11c62cfadb9df18401ab64927815725f73dac4582cd14acd9"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/classificacao_teste_previsoes.csv",
+      "bytes": 6709,
+      "sha256": "3aacaf1d99756de02a4db2bda06fbe7c31dc8f7f86ca6f62f31f507ddbccb13b"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/classificacao_teste_roc.csv",
+      "bytes": 5439,
+      "sha256": "ee1a3e1c0a23951db86a80f6cf070b8d4d37781309076334cd0b411e20317908"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/classificacao_validacao_por_parte.csv",
+      "bytes": 2064,
+      "sha256": "f84ad3760155c38592d348b1b75545bce9252a4ed1a7dfee8d19fbd0512278d0"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/classificacao_validacao_previsoes.csv",
+      "bytes": 33793,
+      "sha256": "7778dc6497000be1b25ecde16023a0bc8a29fbbd4fed83ffdc96bdede6ea3588"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/classificacao_validacao_resumo.csv",
+      "bytes": 423,
+      "sha256": "c86f5e9482fa9e98737fe68d36d0425b435677cc27c51f146e8f763fc715c62b"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/decisao_fechada.json",
+      "bytes": 4325,
+      "sha256": "ea05b8383718997920edeb5aa72ef188d12162638a9c4d2a86a1b582e6da5cd2"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/limiares_validacao.csv",
+      "bytes": 676,
+      "sha256": "36094d622b04c68d492fa6b89730fe0b5032533fc1f6c75295477a73c8a69ec8"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/proveniencia_dados.json",
+      "bytes": 13476,
+      "sha256": "a3b22d3526f5222f4ad581b1a440842abab466bebfab690ee35a19086ef9b618"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/regressao_particoes.json",
+      "bytes": 15198,
+      "sha256": "8851f69db7075dbdad339927c46469c0a2069cc43b760ee5b5176372e48aecf2"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/regressao_teste_contagens_por_erro.csv",
+      "bytes": 282,
+      "sha256": "811b1bcb37ccf9d7d764ce5a77dd8a7a4c97605201868c44b9b77fa474a585fa"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/regressao_teste_medidas.csv",
+      "bytes": 163,
+      "sha256": "0e36b9be6a49984a8d2de6bee8e2cdd1469d175204e0851882b53b8e9c1fd86d"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/regressao_teste_previsoes.csv",
+      "bytes": 8121,
+      "sha256": "5689d00fbea85d56a573a151446b8137b68ecb15dfc4d4bab101c1c8fff405cf"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/regressao_validacao_por_parte.csv",
+      "bytes": 1105,
+      "sha256": "78588d6226b9a0f3155a9a93a9d791a7661e1dc7f0f791a11e2e9a9da365e7fb"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/regressao_validacao_previsoes.csv",
+      "bytes": 16139,
+      "sha256": "3f6b91f0b64a8277b463e09f2d252ce555793641372034e5e9d390d01843cb65"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/regressao_validacao_resumo.csv",
+      "bytes": 444,
+      "sha256": "bbcc0be021713b9ce685fd2e2fd5b0979aebb686f73fc208369cf1fe2a0931fd"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/teste_resumo.json",
+      "bytes": 3688,
+      "sha256": "638645232de44cab9e4079ff485ecd9aba792e57b19d0d7897741131d9293fa2"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/verificacao_figuras.json",
+      "bytes": 9703,
+      "sha256": "b800bd5f23cd0c2c4a10c8ed18fd3e33ba54e6c8226070d0a5378227064f7b26"
+    },
+    {
+      "ficheiro": "cap14_15/resultados/verificacao_resultados.json",
+      "bytes": 7341,
+      "sha256": "5a085d3cc043c897641e8a035cad753b0f950dee60dbc391944161c15f054346"
+    },
+    {
+      "ficheiro": "dados_desenvolvimento.zip",
+      "bytes": 42539,
+      "sha256": "31cbd17f4bef795c7715255f5927cdd50955af0c36efe97bb0347b97e8e9d73b"
+    },
+    {
+      "ficheiro": "dados_teste_reservado.zip",
+      "bytes": 11689,
+      "sha256": "569a2b61f1ea35476a5a2a42e830392bfeceed8e11b283487f9baeb9c18fe2fc"
+    },
+    {
+      "ficheiro": "requisitos.txt",
+      "bytes": 101,
+      "sha256": "ad1b958298c9ebe522265a3838ec330e492bebfd8d6dd6c5fa2a7e78827a4eb5"
+    },
+    {
+      "ficheiro": "verificar_pacote.py",
+      "bytes": 2873,
+      "sha256": "4acb5b33c697a869a561b48cc77a0eda2731005823d799ca271ee1ca1d0a0721"
+    }
+  ]
+}

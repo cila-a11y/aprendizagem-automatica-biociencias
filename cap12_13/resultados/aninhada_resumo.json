@@ -1,0 +1,18 @@
+{
+  "AUC_media_exterior": 0.9501547987616099,
+  "desvio_AUC_exterior_ddof1": 0.010400869287889612,
+  "Cs_escolhidos": [
+    10.0,
+    1.0,
+    0.1,
+    0.1,
+    1.0
+  ],
+  "metricas_reunidas": {
+    "AUC": 0.9485655314757482,
+    "acerto_limiar_050": 0.8835164835164835,
+    "perda_logaritmica": 0.2725313055516945,
+    "Brier": 0.08131465609252882
+  },
+  "nota": "As médias internas orientaram escolhas em cada treino exterior; não são confundidas com as avaliações exteriores. Não houve pesquisa final nas 455 amostras."
+}

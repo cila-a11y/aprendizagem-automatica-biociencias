@@ -1,0 +1,53 @@
+[
+  {
+    "parte": 1,
+    "doentes_treino": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "doentes_validacao": [
+      "C",
+      "F"
+    ],
+    "classes_validacao": {
+      "0": 2,
+      "1": 2
+    }
+  },
+  {
+    "parte": 2,
+    "doentes_treino": [
+      "A",
+      "C",
+      "D",
+      "F"
+    ],
+    "doentes_validacao": [
+      "B",
+      "E"
+    ],
+    "classes_validacao": {
+      "0": 2,
+      "1": 2
+    }
+  },
+  {
+    "parte": 3,
+    "doentes_treino": [
+      "B",
+      "C",
+      "E",
+      "F"
+    ],
+    "doentes_validacao": [
+      "A",
+      "D"
+    ],
+    "classes_validacao": {
+      "0": 2,
+      "1": 2
+    }
+  }
+]

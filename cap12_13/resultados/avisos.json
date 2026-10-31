@@ -1,0 +1,90 @@
+[
+  {
+    "contexto": "logistica_parte_1",
+    "avisos": []
+  },
+  {
+    "contexto": "logistica_parte_2",
+    "avisos": []
+  },
+  {
+    "contexto": "logistica_parte_3",
+    "avisos": []
+  },
+  {
+    "contexto": "logistica_parte_4",
+    "avisos": []
+  },
+  {
+    "contexto": "logistica_parte_5",
+    "avisos": []
+  },
+  {
+    "contexto": "Mediana_parte_1",
+    "avisos": []
+  },
+  {
+    "contexto": "Mediana_parte_2",
+    "avisos": []
+  },
+  {
+    "contexto": "Mediana_parte_3",
+    "avisos": []
+  },
+  {
+    "contexto": "Mediana_parte_4",
+    "avisos": []
+  },
+  {
+    "contexto": "Mediana_parte_5",
+    "avisos": []
+  },
+  {
+    "contexto": "Linear_parte_1",
+    "avisos": []
+  },
+  {
+    "contexto": "Linear_parte_2",
+    "avisos": []
+  },
+  {
+    "contexto": "Linear_parte_3",
+    "avisos": []
+  },
+  {
+    "contexto": "Linear_parte_4",
+    "avisos": []
+  },
+  {
+    "contexto": "Linear_parte_5",
+    "avisos": []
+  },
+  {
+    "contexto": "validacao_aninhada_exterior_1",
+    "avisos": []
+  },
+  {
+    "contexto": "validacao_aninhada_exterior_2",
+    "avisos": []
+  },
+  {
+    "contexto": "validacao_aninhada_exterior_3",
+    "avisos": []
+  },
+  {
+    "contexto": "validacao_aninhada_exterior_4",
+    "avisos": []
+  },
+  {
+    "contexto": "validacao_aninhada_exterior_5",
+    "avisos": []
+  },
+  {
+    "contexto": "floresta_permutacao",
+    "avisos": []
+  },
+  {
+    "contexto": "permutation_importance",
+    "avisos": []
+  }
+]

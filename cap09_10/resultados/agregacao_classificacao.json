@@ -1,0 +1,17 @@
+{
+  "id_registo": 1,
+  "parte_validacao": 2,
+  "n_treino": 364,
+  "resposta_observada": 1.0,
+  "entradas": {
+    "mean radius": 17.99,
+    "mean texture": 10.38
+  },
+  "arvores": 200,
+  "previsao_floresta": 0.7118290598290595,
+  "media_saidas_individuais": 0.71182905982906,
+  "minimo_saida_individual": 0.0,
+  "maximo_saida_individual": 1.0,
+  "id_excluido_de_todos_os_treinos": true,
+  "interpretacao": "Distribuição de saídas de árvores para a mesma observação; não é um intervalo de incerteza."
+}

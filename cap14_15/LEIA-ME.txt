@@ -1,0 +1,63 @@
+CAPÍTULOS 14 E 15 — ESTUDOS DE CASO E COMUNICAÇÃO
+
+Com as dependências instaladas pelo requisitos.txt da pasta principal,
+execute nesta pasta, por esta ordem:
+
+    python codigo/selecionar_desenvolvimento.py
+    python codigo/avaliar_teste_final.py --confirmar-teste
+    python codigo/gerar_figuras.py
+    python codigo/verificar_resultados.py
+
+SELEÇÃO E AVALIAÇÃO
+
+O primeiro programa usa apenas o desenvolvimento. Compara logística e
+floresta pela AUC média por parte, regressão linear e floresta pelo MAE
+médio por parte, e aplica a regra didática de escolha do limiar entre
+0.20, 0.30, 0.50 e 0.70. Escreve resultados/decisao_fechada.json, com
+configurações, escolhas e códigos de integridade do código e das saídas.
+
+O segundo programa confere esse registo, ajusta os procedimentos escolhidos
+em todo o desenvolvimento e só depois abre as cópias de teste. A opção
+--confirmar-teste torna explícita essa passagem. Não escolhe novos modelos
+nem um novo limiar a partir do teste. Precisa dos CSV e do ficheiro
+resultados/proveniencia_dados.json, todos incluídos.
+
+O terceiro programa desenha duas figuras a partir das previsões guardadas,
+sem voltar a ajustar os modelos. O quarto confere dados, divisões, contas
+e previsões; refaz os ajustamentos finais para verificar a reprodução,
+mas não seleciona outros procedimentos.
+
+modelos.py é um módulo usado pelos programas, não uma etapa adicional.
+As cópias podem ser reconstituídas opcionalmente com:
+
+    python codigo/preparar_dados.py
+
+Este comando usa as fontes locais, não calcula desempenho e recusa
+substituir uma cópia existente que difira da preparação prevista.
+
+FICHEIROS PARA CONFERIR
+
+- *_validacao_resumo.csv: medidas médias entre partes usadas na seleção.
+- limiares_validacao.csv: contas dos quatro limiares no desenvolvimento.
+- *_particoes.json: linhas de treino e validação de cada parte.
+- *_teste_previsoes.csv: resposta, previsões e decisões ou erros por registo.
+- *_teste_medidas.csv e teste_resumo.json: medidas finais e comparações.
+- ajustamentos_finais.json: registos usados no ajuste e preparação aprendida.
+- avisos_desenvolvimento.json e avisos_teste.json: avisos dos ajustamentos.
+- verificacao_resultados.json e verificacao_figuras.json: controlos das saídas.
+
+São usadas 455 amostras de desenvolvimento e 114 de teste em Wisconsin;
+273 pinguins com resposta observada no desenvolvimento e 69 no teste.
+As duas massas ausentes não são imputadas. As referências são a frequência
+de malignidade e a decisão sempre benigna na classificação, e a mediana
+do desenvolvimento na regressão.
+
+Os testes e os resultados já estão incluídos no material do livro. A
+separação de programas permite conferir a lógica do procedimento; não
+prova sigilo, pré-registo histórico ou uma nova avaliação independente.
+Não se construíram intervalos de confiança nem testes de significância.
+Os exemplos não são validação clínica ou biológica externa.
+
+Os comandos substituem as saídas correspondentes. Guarde separadamente
+explorações que queira conservar. Fonte e atribuição em ../FONTES_DADOS.txt.
+Os blocos do livro usam dados/ nesta pasta de trabalho.

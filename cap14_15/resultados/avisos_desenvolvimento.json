@@ -1,0 +1,122 @@
+[
+  {
+    "contexto": "classificacao_referencia_parte_1",
+    "avisos": []
+  },
+  {
+    "contexto": "classificacao_referencia_parte_2",
+    "avisos": []
+  },
+  {
+    "contexto": "classificacao_referencia_parte_3",
+    "avisos": []
+  },
+  {
+    "contexto": "classificacao_referencia_parte_4",
+    "avisos": []
+  },
+  {
+    "contexto": "classificacao_referencia_parte_5",
+    "avisos": []
+  },
+  {
+    "contexto": "classificacao_logistica_parte_1",
+    "avisos": []
+  },
+  {
+    "contexto": "classificacao_logistica_parte_2",
+    "avisos": []
+  },
+  {
+    "contexto": "classificacao_logistica_parte_3",
+    "avisos": []
+  },
+  {
+    "contexto": "classificacao_logistica_parte_4",
+    "avisos": []
+  },
+  {
+    "contexto": "classificacao_logistica_parte_5",
+    "avisos": []
+  },
+  {
+    "contexto": "classificacao_floresta_parte_1",
+    "avisos": []
+  },
+  {
+    "contexto": "classificacao_floresta_parte_2",
+    "avisos": []
+  },
+  {
+    "contexto": "classificacao_floresta_parte_3",
+    "avisos": []
+  },
+  {
+    "contexto": "classificacao_floresta_parte_4",
+    "avisos": []
+  },
+  {
+    "contexto": "classificacao_floresta_parte_5",
+    "avisos": []
+  },
+  {
+    "contexto": "regressao_referencia_parte_1",
+    "avisos": []
+  },
+  {
+    "contexto": "regressao_referencia_parte_2",
+    "avisos": []
+  },
+  {
+    "contexto": "regressao_referencia_parte_3",
+    "avisos": []
+  },
+  {
+    "contexto": "regressao_referencia_parte_4",
+    "avisos": []
+  },
+  {
+    "contexto": "regressao_referencia_parte_5",
+    "avisos": []
+  },
+  {
+    "contexto": "regressao_linear_parte_1",
+    "avisos": []
+  },
+  {
+    "contexto": "regressao_linear_parte_2",
+    "avisos": []
+  },
+  {
+    "contexto": "regressao_linear_parte_3",
+    "avisos": []
+  },
+  {
+    "contexto": "regressao_linear_parte_4",
+    "avisos": []
+  },
+  {
+    "contexto": "regressao_linear_parte_5",
+    "avisos": []
+  },
+  {
+    "contexto": "regressao_floresta_parte_1",
+    "avisos": []
+  },
+  {
+    "contexto": "regressao_floresta_parte_2",
+    "avisos": []
+  },
+  {
+    "contexto": "regressao_floresta_parte_3",
+    "avisos": []
+  },
+  {
+    "contexto": "regressao_floresta_parte_4",
+    "avisos": []
+  },
+  {
+    "contexto": "regressao_floresta_parte_5",
+    "avisos": []
+  }
+]

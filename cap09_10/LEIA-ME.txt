@@ -1,0 +1,29 @@
+CAPÍTULOS 9 E 10 — ÁRVORES E FLORESTAS
+
+Com as dependências instaladas pelo requisitos.txt da pasta principal,
+execute nesta pasta, por esta ordem:
+
+    python codigo/validar_dados.py
+    python codigo/gerar_resultados.py
+    python codigo/gerar_figuras.py
+
+O primeiro programa confere as cópias sem as alterar. O segundo calcula
+modelos, previsões, medidas e exemplos; o terceiro gera sete figuras.
+Não se consulta o teste reservado. As cópias de desenvolvimento são as
+mesmas dos capítulos anteriores, com id_registo na mesma ordem.
+
+Os ficheiros metricas_*_por_parte.csv e resumo_*_medias_partes.csv descrevem
+as cinco partes. metricas_*_previsoes_reunidas.csv conservam as medidas
+calculadas sobre as previsões reunidas. Na classificação, usa-se p>=0.50,
+inclusive nos empates. As AUC usam probabilidades, não decisões.
+
+As duas árvores desenhadas são ajustamentos ao desenvolvimento completo.
+Os exemplos de agregação para o registo 1 usam florestas cujo treino exclui
+esse registo. As 200 saídas das árvores não são um intervalo de confiança.
+O bootstrap ilustrativo é fictício. O exemplo de permutação usa uma divisão
+interna própria de 318/137 amostras, documentada nos resultados.
+
+Os programas substituem os seus próprios resultados e figuras, sem
+substituir os CSV de desenvolvimento. Conserve separadamente experiências
+que queira comparar. Fonte e atribuição em ../FONTES_DADOS.txt; os blocos
+do livro usam dados/ nesta pasta de trabalho.

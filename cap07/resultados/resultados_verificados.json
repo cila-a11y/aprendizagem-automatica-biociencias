@@ -1,0 +1,219 @@
+{
+  "ficheiro_dados": "dados/penguins_desenvolvimento.csv",
+  "sha256_dados": "8f3a9c1a2acef4ce13f8ba13cd30927194b0c30b73d83eaa82d65d269abb03d0",
+  "registos_desenvolvimento": 275,
+  "registos_avaliados": 273,
+  "ids_excluidos_sem_massa": [
+    4,
+    272
+  ],
+  "omissos_nos_preditores_dos_registos_avaliados": {
+    "flipper_length_mm": 0,
+    "bill_length_mm": 0
+  },
+  "semente_particoes": 2026,
+  "regra_particoes": "KFold(n_splits=5, shuffle=True, random_state=2026), na ordem do CSV",
+  "tamanhos_treino_validacao": [
+    [
+      218,
+      55
+    ],
+    [
+      218,
+      55
+    ],
+    [
+      218,
+      55
+    ],
+    [
+      219,
+      54
+    ],
+    [
+      219,
+      54
+    ]
+  ],
+  "convencao_avaliacao": "Medidas calculadas sobre as 273 previsões de validação reunidas.",
+  "convencao_erro": "massa observada menos massa prevista, em gramas",
+  "teste_utilizado": false,
+  "metricas_validacao": [
+    {
+      "procedimento": "Referência média",
+      "MAE_g": 681.5954225420733,
+      "RMSE_g": 811.4392984185596,
+      "R2": -0.009754114193107899
+    },
+    {
+      "procedimento": "Referência mediana",
+      "MAE_g": 672.57326007326,
+      "RMSE_g": 832.065083460154,
+      "R2": -0.061739935665028334
+    },
+    {
+      "procedimento": "Regressão simples",
+      "MAE_g": 320.816473775671,
+      "RMSE_g": 400.20773392177557,
+      "R2": 0.7543739006833899
+    },
+    {
+      "procedimento": "Regressão múltipla",
+      "MAE_g": 320.0462953804463,
+      "RMSE_g": 398.9573461895999,
+      "R2": 0.7559063452032163
+    }
+  ],
+  "metricas_treino_ajustamentos_completos": {
+    "regressao_simples": {
+      "MAE_g": 319.1429364049831,
+      "RMSE_g": 399.04359521292463,
+      "R2": 0.7558007944961422
+    },
+    "regressao_multipla": {
+      "MAE_g": 318.1251915633939,
+      "RMSE_g": 397.4956208457789,
+      "R2": 0.757691720283928
+    }
+  },
+  "coeficientes_ajustamentos_completos": [
+    {
+      "procedimento": "Regressão simples",
+      "termo": "ordenada_na_origem",
+      "unidade": "g",
+      "coeficiente": -5641.17000548169
+    },
+    {
+      "procedimento": "Regressão simples",
+      "termo": "flipper_length_mm",
+      "unidade": "g/mm",
+      "coeficiente": 49.005657113894436
+    },
+    {
+      "procedimento": "Regressão múltipla",
+      "termo": "ordenada_na_origem",
+      "unidade": "g",
+      "coeficiente": -5579.160251533982
+    },
+    {
+      "procedimento": "Regressão múltipla",
+      "termo": "flipper_length_mm",
+      "unidade": "g/mm",
+      "coeficiente": 46.802306572844344
+    },
+    {
+      "procedimento": "Regressão múltipla",
+      "termo": "bill_length_mm",
+      "unidade": "g/mm",
+      "coeficiente": 8.683748127906327
+    }
+  ],
+  "registos_exemplo_validacao": [
+    {
+      "id_registo": 1,
+      "body_mass_g": 3750.0,
+      "flipper_length_mm": 181.0,
+      "bill_length_mm": 39.1,
+      "parte_validacao": 3,
+      "prevista_referencia_media_g": 4211.0091743119265,
+      "erro_referencia_media_g": -461.0091743119265,
+      "prevista_referencia_mediana_g": 4050.0,
+      "erro_referencia_mediana_g": -300.0,
+      "prevista_regressao_simples_g": 3216.739222254797,
+      "erro_regressao_simples_g": 533.2607777452031,
+      "prevista_regressao_multipla_g": 3220.081296518114,
+      "erro_regressao_multipla_g": 529.918703481886
+    },
+    {
+      "id_registo": 2,
+      "body_mass_g": 3800.0,
+      "flipper_length_mm": 186.0,
+      "bill_length_mm": 39.5,
+      "parte_validacao": 1,
+      "prevista_referencia_media_g": 4202.178899082569,
+      "erro_referencia_media_g": -402.17889908256893,
+      "prevista_referencia_mediana_g": 4025.0,
+      "erro_referencia_mediana_g": -225.0,
+      "prevista_regressao_simples_g": 3481.0628194097944,
+      "erro_regressao_simples_g": 318.93718059020557,
+      "prevista_regressao_multipla_g": 3475.4597518993696,
+      "erro_regressao_multipla_g": 324.5402481006304
+    },
+    {
+      "id_registo": 3,
+      "body_mass_g": 3250.0,
+      "flipper_length_mm": 195.0,
+      "bill_length_mm": 40.3,
+      "parte_validacao": 4,
+      "prevista_referencia_media_g": 4233.447488584475,
+      "erro_referencia_media_g": -983.4474885844747,
+      "prevista_referencia_mediana_g": 4050.0,
+      "erro_referencia_mediana_g": -800.0,
+      "prevista_regressao_simples_g": 3926.706702663333,
+      "erro_regressao_simples_g": -676.7067026633331,
+      "prevista_regressao_multipla_g": 3914.2788713771724,
+      "erro_regressao_multipla_g": -664.2788713771724
+    },
+    {
+      "id_registo": 5,
+      "body_mass_g": 3450.0,
+      "flipper_length_mm": 193.0,
+      "bill_length_mm": 36.7,
+      "parte_validacao": 5,
+      "prevista_referencia_media_g": 4234.474885844749,
+      "erro_referencia_media_g": -784.4748858447492,
+      "prevista_referencia_mediana_g": 4100.0,
+      "erro_referencia_mediana_g": -650.0,
+      "prevista_regressao_simples_g": 3811.406588229109,
+      "erro_regressao_simples_g": -361.4065882291088,
+      "prevista_regressao_multipla_g": 3767.772594030379,
+      "erro_regressao_multipla_g": -317.77259403037897
+    },
+    {
+      "id_registo": 9,
+      "body_mass_g": 3475.0,
+      "flipper_length_mm": 193.0,
+      "bill_length_mm": 34.1,
+      "parte_validacao": 1,
+      "prevista_referencia_media_g": 4202.178899082569,
+      "erro_referencia_media_g": -727.1788990825689,
+      "prevista_referencia_mediana_g": 4025.0,
+      "erro_referencia_mediana_g": -550.0,
+      "prevista_regressao_simples_g": 3826.239462314642,
+      "erro_regressao_simples_g": -351.23946231464197,
+      "prevista_regressao_multipla_g": 3756.2651409971995,
+      "erro_regressao_multipla_g": -281.2651409971995
+    }
+  ],
+  "gama_barbatana_mm": [
+    172.0,
+    231.0
+  ],
+  "previsoes_reta_completa_g": {
+    "190": 3669.9048461582533,
+    "200": 4159.961417297198,
+    "210": 4650.017988436142,
+    "220": 5140.074559575085
+  },
+  "versoes": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.8.0",
+    "matplotlib": "3.10.8"
+  },
+  "ilustracoes_ficticias": {
+    "semente": 2026,
+    "observacoes_por_cenario": 80,
+    "fonte": "Dados fictícios gerados exclusivamente para a ilustração.",
+    "construcao": {
+      "massa_prevista_g": "80 valores igualmente espaçados entre 3000 e 5500",
+      "t": "80 valores igualmente espaçados entre -1 e 1",
+      "z": "default_rng(2026).normal(size=80), o mesmo vetor nos três painéis",
+      "erro_sem_padrao_evidente": "150*z",
+      "erro_curvatura": "650*(t**2 - mean(t**2)) + 105*z",
+      "erro_dispersao_crescente": "(50 + 360*(t+1)/2)*z",
+      "massa_observada_g": "massa_prevista_g + erro_previsao_g"
+    }
+  }
+}

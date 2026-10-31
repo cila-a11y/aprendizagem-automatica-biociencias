@@ -1,0 +1,6 @@
+procedimento,termo,unidade,coeficiente
+Regressão simples,ordenada_na_origem,g,-5641.17000548169
+Regressão simples,flipper_length_mm,g/mm,49.005657113894436
+Regressão múltipla,ordenada_na_origem,g,-5579.160251533982
+Regressão múltipla,flipper_length_mm,g/mm,46.802306572844344
+Regressão múltipla,bill_length_mm,g/mm,8.683748127906327

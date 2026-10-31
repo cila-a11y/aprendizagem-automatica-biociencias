@@ -1,0 +1,150 @@
+COMANDOS DE REPRODUÇÃO
+
+Os comandos abaixo são de terminal e partem da pasta principal do pacote.
+Execute as linhas pela ordem indicada dentro de cada grupo. Não é preciso
+executar um capítulo anterior: cada pasta inclui as entradas de que depende.
+Não junte todos os programas numa só pasta; alguns têm o mesmo nome e
+importam outros módulos locais.
+
+INSTALAÇÃO E INTEGRIDADE
+
+    python -m pip install -r requisitos.txt
+    python verificar_pacote.py
+
+CAPÍTULOS 5 E 6
+
+    python cap05_06/codigo/gerar_figuras.py
+
+CAPÍTULO 7
+
+    python cap07/codigo/gerar_figuras.py
+
+CAPÍTULO 8
+
+    python cap08/codigo/gerar_figuras.py
+
+CAPÍTULOS 9 E 10
+
+    python cap09_10/codigo/validar_dados.py
+    python cap09_10/codigo/gerar_resultados.py
+    python cap09_10/codigo/gerar_figuras.py
+
+CAPÍTULO 11
+
+    python cap11/codigo/gerar_resultados.py
+    python cap11/codigo/gerar_figuras.py
+
+CAPÍTULOS 12 E 13
+
+    python cap12_13/codigo/gerar_resultados.py
+    python cap12_13/codigo/gerar_figuras_12.py
+    python cap12_13/codigo/gerar_figuras_13.py
+
+CAPÍTULOS 14 E 15
+
+    python cap14_15/codigo/selecionar_desenvolvimento.py
+    python cap14_15/codigo/avaliar_teste_final.py --confirmar-teste
+    python cap14_15/codigo/gerar_figuras.py
+    python cap14_15/codigo/verificar_resultados.py
+
+O primeiro comando usa só o desenvolvimento. O segundo exige uma indicação
+explícita de que se pretende abrir as cópias de teste. Os dois seguintes
+desenham as figuras e conferem os resultados já calculados. Esta é a
+reprodução de resultados conhecidos, não uma nova avaliação independente.
+
+RECONSTITUIÇÃO OPCIONAL DOS DADOS
+
+As cópias já estão incluídas. Não é preciso executar estes comandos para
+reproduzir os resultados:
+
+    python cap05_06/codigo/preparar_dados.py
+    python cap08/codigo/preparar_dados.py
+    python cap14_15/codigo/preparar_dados.py
+
+O primeiro usa a cópia local penguins_original.csv; o segundo usa a tabela
+Wisconsin incluída no scikit-learn. Ambos reescrevem o desenvolvimento da
+sua própria pasta. O terceiro reconstitui desenvolvimento e teste dos casos
+finais e o respetivo registo de proveniência; recusa substituir uma cópia
+existente que seja diferente. Não use a reconstituição para substituir sem
+cópia de segurança dados que tenha alterado de propósito.
+
+USO DOS PROGRAMAS NUM CADERNO COLAB
+
+1. Carregue material_apoio_biociencias.zip para o ambiente do Colab.
+2. Na primeira célula, descompacte o arquivo que acabou de carregar:
+
+    from pathlib import Path
+    import zipfile
+
+    raiz = Path.cwd().resolve()
+    pasta = raiz / "material_apoio_biociencias"
+    if pasta.exists() or pasta.is_symlink():
+        raise FileExistsError("A pasta de destino ja existe.")
+    destino = pasta.resolve()
+
+    with zipfile.ZipFile("material_apoio_biociencias.zip") as arquivo:
+        nomes = arquivo.namelist()
+        if not nomes or len(nomes) != len(set(nomes)):
+            raise ValueError("Arquivo vazio ou com nomes repetidos.")
+        for nome in nomes:
+            membro = Path(nome)
+            alvo = (raiz / membro).resolve()
+            if (membro.is_absolute() or ".." in membro.parts
+                    or not alvo.is_relative_to(destino)):
+                raise ValueError("Caminho inesperado no arquivo.")
+        arquivo.extractall(raiz)
+
+Estas verificações impedem que se substitua uma pasta já existente e
+recusam caminhos que saiam da pasta prevista para o pacote. São feitas
+antes de extrair qualquer ficheiro. Se o pacote já estiver descompactado,
+não repita esta célula: selecione a pasta existente no passo seguinte.
+
+3. Selecione a pasta extraída e instale as dependências antes de importar
+   as bibliotecas do exemplo:
+
+    %cd /content/material_apoio_biociencias
+    %pip install -r requisitos.txt
+
+O caminho /content é o exemplo usual do Colab; confirme a localização real
+se descompactou noutro sítio. Os comandos começados por % pertencem ao
+ambiente interativo e não são instruções de um ficheiro Python comum.
+Se a instalação pedir para reiniciar a sessão, reinicie e volte a selecionar
+a pasta. A sessão remota não é armazenamento permanente: descarregue as
+saídas que quiser conservar, além de guardar o caderno.
+
+4. Execute cada programa num processo separado, por exemplo:
+
+    import subprocess
+    import sys
+
+    subprocess.run(
+        [sys.executable, "cap11/codigo/gerar_resultados.py"],
+        check=True,
+    )
+    subprocess.run(
+        [sys.executable, "cap11/codigo/gerar_figuras.py"],
+        check=True,
+    )
+
+subprocess.run executa aqui um programa com o Python da sessão; check=True
+faz parar a célula se o programa terminar com erro. As saídas são ficheiros
+na pasta do capítulo, não objetos acrescentados à memória do caderno.
+Para a etapa final, o argumento é um elemento separado da lista:
+
+    subprocess.run(
+        [sys.executable,
+         "cap14_15/codigo/avaliar_teste_final.py",
+         "--confirmar-teste"],
+        check=True,
+    )
+
+Esta forma evita confundir módulos de capítulos diferentes numa mesma
+sessão. Se preferir explorar os blocos impressos no livro, execute-os
+diretamente nas células, pela ordem de leitura, e use uma sessão própria
+para cada capítulo. Não é necessário copiar os programas completos para
+dentro de uma célula.
+
+Documentação oficial do ambiente:
+https://research.google.com/colaboratory/faq.html
+https://research.google.com/colaboratory/runtime-version-faq.html
+https://ipython.readthedocs.io/en/stable/interactive/magics.html

@@ -1,0 +1,37 @@
+CAPÍTULO 11 — REDES NEURONAIS
+
+Com as dependências instaladas pelo requisitos.txt da pasta principal,
+execute nesta pasta, por esta ordem:
+
+    python codigo/gerar_resultados.py
+    python codigo/gerar_figuras.py
+
+O primeiro programa ajusta os procedimentos e guarda os resultados; o
+segundo usa as saídas guardadas para produzir cinco figuras. São usadas
+455 amostras de desenvolvimento de Wisconsin e duas entradas. O teste
+reservado não é incluído nem consultado.
+
+Há três experiências diferentes, com registos separados:
+
+1. Comparação nas cinco partes. Os números de épocas efetivamente usados
+   por fit estão em ajustes_validacao.json. max_iter=800 é um limite de
+   épocas para Adam, não 800 atualizações nem uma obrigação de executar
+   todas essas épocas. A regra de paragem pode atuar antes.
+2. Curvas por época. Usa-se uma divisão interna de 318/137 amostras e
+   200 chamadas a partial_fit, uma época por chamada. O ciclo mantém pesos
+   e estado do otimizador. Não é a mesma execução de fit da comparação.
+   As curvas mostram log-loss recalculada no fim de cada época, sem somar
+   a penalização dos pesos. Os valores estão em curvas_rede_8.csv e
+   curvas_rede_32.csv, com o resumo e a divisão nos JSON correspondentes.
+3. Mapas de probabilidade. São ilustrações de ajustamentos às 455 amostras,
+   não previsões de validação. Os coeficientes estão nos JSON rede_*;
+   superficies_probabilidade.npz conserva as grelhas usadas nas figuras.
+
+Os programas capturam e registam avisos. Um aviso de convergência deve
+ser investigado, não ocultado. O código de controlo das épocas consulta
+atributos internos do otimizador; por isso, importa conservar a versão
+de scikit-learn indicada para reproduzir esta verificação.
+
+As saídas são substituídas ao repetir os comandos. Guarde à parte as suas
+experiências. Fonte e atribuição em ../FONTES_DADOS.txt. Para copiar os
+blocos do livro para um caderno, use esta pasta como diretório de trabalho.

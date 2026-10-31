@@ -1,3 +1,0 @@
-id_registo,maligno,classe_prevista,score_positivo,tipo_erro
-A03,0,1,0.64,FP
-A04,1,0,0.38,FN

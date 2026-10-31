@@ -1,0 +1,150 @@
+{
+  "ficheiro_dados": "dados/wisconsin_desenvolvimento.csv",
+  "sha256_dados": "997edc11984a788044ef3ceb17595f0b77b1aac91a7186e8afd3c2dde3b6153d",
+  "registos_avaliados": 455,
+  "benignos": 285,
+  "malignos": 170,
+  "omissos_nas_duas_entradas": {
+    "mean radius": 0,
+    "mean texture": 0
+  },
+  "classe_positiva": "maligno=1",
+  "coluna_predict_proba": 1,
+  "regra_decisao": "classe=1 se p_maligno >= limiar; caso contrário, classe=0",
+  "procedimento": "StandardScaler + LogisticRegression(C=1, solver='lbfgs', max_iter=1000)",
+  "penalizacao": "L2, predefinida nesta configuração em scikit-learn 1.8.0; constante não penalizada",
+  "semente_particoes": 2026,
+  "regra_particoes": "StratifiedKFold(n_splits=5, shuffle=True, random_state=2026), na ordem do CSV",
+  "auc_por_parte": [
+    0.9602683178534571,
+    0.956656346749226,
+    0.9463364293085655,
+    0.9597523219814242,
+    0.9375644994840041
+  ],
+  "auc_media_partes": 0.9521155830753354,
+  "auc_desvio_padrao_partes_ddof1": 0.00988101781404845,
+  "auc_probabilidades_reunidas": 0.9518059855521156,
+  "auc_agregada_pares": {
+    "pares_positivo_negativo": 48450,
+    "positivo_com_probabilidade_superior": 46115,
+    "empates": 0
+  },
+  "metricas_por_limiar": [
+    {
+      "limiar": 0.2,
+      "VN": 225,
+      "FP": 60,
+      "FN": 10,
+      "VP": 160,
+      "proporcao_corretas": 0.8461538461538461,
+      "sensibilidade": 0.9411764705882353,
+      "especificidade": 0.7894736842105263,
+      "taxa_falsos_positivos": 0.21052631578947367,
+      "VPP": 0.7272727272727273
+    },
+    {
+      "limiar": 0.3,
+      "VN": 247,
+      "FP": 38,
+      "FN": 19,
+      "VP": 151,
+      "proporcao_corretas": 0.8747252747252747,
+      "sensibilidade": 0.888235294117647,
+      "especificidade": 0.8666666666666667,
+      "taxa_falsos_positivos": 0.13333333333333333,
+      "VPP": 0.798941798941799
+    },
+    {
+      "limiar": 0.5,
+      "VN": 268,
+      "FP": 17,
+      "FN": 31,
+      "VP": 139,
+      "proporcao_corretas": 0.8945054945054945,
+      "sensibilidade": 0.8176470588235294,
+      "especificidade": 0.9403508771929825,
+      "taxa_falsos_positivos": 0.05964912280701754,
+      "VPP": 0.8910256410256411
+    },
+    {
+      "limiar": 0.7,
+      "VN": 278,
+      "FP": 7,
+      "FN": 49,
+      "VP": 121,
+      "proporcao_corretas": 0.8769230769230769,
+      "sensibilidade": 0.711764705882353,
+      "especificidade": 0.9754385964912281,
+      "taxa_falsos_positivos": 0.02456140350877193,
+      "VPP": 0.9453125
+    }
+  ],
+  "coeficientes_ajustamento_completo": [
+    {
+      "termo": "constante",
+      "coeficiente": -0.6722101854256033,
+      "media_treino": null,
+      "escala_treino": null
+    },
+    {
+      "termo": "mean radius",
+      "coeficiente": 3.314834624876096,
+      "media_treino": 14.14075164835165,
+      "escala_treino": 3.6151608840330103
+    },
+    {
+      "termo": "mean texture",
+      "coeficiente": 0.8630600309553187,
+      "media_treino": 19.245582417582416,
+      "escala_treino": 4.202144094442751
+    }
+  ],
+  "registos_exemplo_validacao": [
+    {
+      "id_registo": 1,
+      "mean radius": 17.99,
+      "mean texture": 10.38,
+      "maligno": 1,
+      "parte_validacao": 2,
+      "p_maligno_validacao": 0.722231100186363,
+      "classe_limiar_050": 1
+    },
+    {
+      "id_registo": 4,
+      "mean radius": 11.42,
+      "mean texture": 20.38,
+      "maligno": 1,
+      "parte_validacao": 5,
+      "p_maligno_validacao": 0.05095898896610398,
+      "classe_limiar_050": 0
+    }
+  ],
+  "probabilidade_ajuste_completo_nas_medias": 0.3380021200977058,
+  "razoes_odds_uma_unidade_padronizada": [
+    27.517842841586404,
+    2.3704031139446142
+  ],
+  "sigmoide_exemplos": {
+    "-2": 0.11920292202211755,
+    "0": 0.5,
+    "1.2": 0.7685247834990175,
+    "2": 0.8807970779778823,
+    "3.2": 0.9608342772032357
+  },
+  "teste_utilizado": false,
+  "versoes": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.8.0",
+    "matplotlib": "3.10.8"
+  },
+  "roc_ficticia": {
+    "amostras": 6,
+    "positivas": 3,
+    "negativas": 3,
+    "auc": 0.6666666666666666,
+    "fonte": "Exemplo inteiramente fictício A-F, conservado do exercício 8.6."
+  }
+}

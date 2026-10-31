@@ -1,0 +1,73 @@
+{
+  "treino_original": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H"
+  ],
+  "amostras": [
+    {
+      "arvore_ficticia": 1,
+      "sorteios": [
+        "A",
+        "A",
+        "C",
+        "D",
+        "D",
+        "F",
+        "H",
+        "H"
+      ],
+      "n_sorteios": 8,
+      "n_distintos": 5,
+      "ausentes": [
+        "B",
+        "E",
+        "G"
+      ]
+    },
+    {
+      "arvore_ficticia": 2,
+      "sorteios": [
+        "B",
+        "C",
+        "C",
+        "E",
+        "F",
+        "F",
+        "G",
+        "G"
+      ],
+      "n_sorteios": 8,
+      "n_distintos": 5,
+      "ausentes": [
+        "A",
+        "D",
+        "H"
+      ]
+    },
+    {
+      "arvore_ficticia": 3,
+      "sorteios": [
+        "A",
+        "B",
+        "D",
+        "D",
+        "E",
+        "G",
+        "H",
+        "H"
+      ],
+      "n_sorteios": 8,
+      "n_distintos": 6,
+      "ausentes": [
+        "C",
+        "F"
+      ]
+    }
+  ]
+}

@@ -1,7 +1,0 @@
-id_registo,maligno,classe_prevista,score_positivo
-A01,0,0,0.12
-A02,1,1,0.83
-A03,0,1,0.64
-A04,1,0,0.38
-A05,1,1,0.72
-A06,0,0,0.25

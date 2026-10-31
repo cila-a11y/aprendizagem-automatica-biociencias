@@ -1,0 +1,18 @@
+[
+  {
+    "contexto": "classificacao_final_referencia",
+    "avisos": []
+  },
+  {
+    "contexto": "classificacao_final_logistica",
+    "avisos": []
+  },
+  {
+    "contexto": "regressao_final_referencia",
+    "avisos": []
+  },
+  {
+    "contexto": "regressao_final_floresta",
+    "avisos": []
+  }
+]

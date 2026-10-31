@@ -1,0 +1,8 @@
+chave,procedimento,MAE_g,RMSE_g
+linear,Regressão linear,320.0462953804463,398.9573461895999
+arvore_profundidade_2,Árvore profundidade 2,342.0209232321114,434.4581315953652
+arvore_profundidade_4,Árvore profundidade 4,312.9849698047523,395.9919343578559
+arvore_sem_limite,Árvore sem limite,412.3473748473749,508.72531625150856
+floresta_folha_1,Floresta folha mínima 1,305.8624909151695,391.29246981222474
+floresta_folha_5,Floresta folha mínima 5,295.82104750741354,378.8867623629054
+mediana,Referência mediana,672.57326007326,832.065083460154

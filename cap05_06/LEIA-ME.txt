@@ -1,0 +1,31 @@
+CAPÍTULOS 5 E 6 — K-MEANS E COMPONENTES PRINCIPAIS
+
+Com as dependências instaladas pelo requisitos.txt da pasta principal,
+execute nesta pasta:
+
+    python codigo/gerar_figuras.py
+
+O programa calcula os resultados e gera oito figuras. Usa só o CSV de
+desenvolvimento: 275 linhas, das quais 273 têm completas as quatro medidas
+da análise. O teste não é usado nos cálculos. A tabela simplificada integral
+dos pinguins permite a reconstituição opcional do desenvolvimento:
+
+    python codigo/preparar_dados.py
+
+Este último comando reescreve o desenvolvimento; não calcula desempenho
+nem cria um CSV de teste. A tabela simplificada integral inclui registos reservados,
+apesar de o programa de análise ler apenas o desenvolvimento.
+
+Em resultados/, silhuetas_k2.csv a silhuetas_k4.csv contêm as silhuetas
+individuais; acp_coordenadas.csv, acp_coeficientes.csv e acp_variancia.csv
+permitem relacionar projeções, direções e variância. O JSON conserva os
+controlos numéricos e as versões. As figuras da atualização dos centros
+e da projeção de seis pontos são ilustrações fictícias identificadas.
+
+Os números atribuídos aos grupos começam em 1 na apresentação. Uma troca
+dos números dos grupos ou dos sinais das componentes, noutro ambiente,
+não constitui por si só uma alteração da estrutura da solução.
+
+Os comandos substituem os seus próprios resultados e figuras. Conserve
+separadamente experiências que queira comparar. Fonte e atribuição em
+../FONTES_DADOS.txt; os blocos do livro usam dados/ nesta pasta de trabalho.

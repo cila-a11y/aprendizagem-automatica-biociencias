@@ -1,67 +1,89 @@
 # Aprendizagem automática em Biociências
 
-Materiais de apoio a *Aprendizagem automática em Biociências — Uma introdução
-com exemplos em Python*. Aqui encontra os dados, os programas e os resultados
-necessários para executar os exemplos e reproduzir os estudos.
+Material de apoio a *Aprendizagem automática em Biociências — Uma introdução
+com exemplos em Python*. Aqui encontra os dados, os programas Python, os
+resultados de referência e as figuras dos capítulos 5 a 15, organizados
+pelos mesmos capítulos e nomes de ficheiros usados no livro.
 
-## Começar
+## Descarregar e começar
 
-1. Descarregue o repositório em **Code → Download ZIP** e descompacte-o.
-2. Siga o [guia de execução](GUIA_EXECUCAO.md) para trabalhar no seu computador
-   ou no Google Colab.
-3. Escolha o percurso correspondente ao capítulo que está a ler.
+**[Descarregar os materiais](https://github.com/cila-a11y/aprendizagem-automatica-biociencias/archive/refs/heads/main.zip)**
 
-| Percurso | Conteúdo | Instruções |
+A ligação descarrega um ZIP com os materiais do repositório.
+Descompacte-o e conserve a organização das pastas. Comece por
+[LEIA-ME.txt](LEIA-ME.txt) e siga a sequência de [COMANDOS.txt](COMANDOS.txt)
+para o capítulo pretendido. Esses ficheiros incluem instruções para o
+computador local e para o Google Colab.
+
+Para acompanhar apenas os blocos de código impressos no livro, estão também
+disponíveis os dois arquivos de dados:
+
+- [Descarregar dados_desenvolvimento.zip](https://github.com/cila-a11y/aprendizagem-automatica-biociencias/raw/refs/heads/main/dados_desenvolvimento.zip): dois CSV, um de pinguins e outro de Wisconsin, dentro de `dados/`.
+- [Descarregar dados_teste_reservado.zip](https://github.com/cila-a11y/aprendizagem-automatica-biociencias/raw/refs/heads/main/dados_teste_reservado.zip): os dois CSV destinados à avaliação final do capítulo 14, também dentro de `dados/`.
+
+O pacote completo já inclui estes dois arquivos. O apêndice A do livro
+explica quando usar cada um. Comece pelo desenvolvimento e abra o teste na
+etapa correspondente.
+
+## Localizar os materiais de cada capítulo
+
+| Capítulos | Conteúdo | Pasta e instruções |
 |---|---|---|
-| Capítulos 1–6 | Python, tabelas, gráficos, avaliação, K-means e ACP | [Fundamentos](reproducao/fundamentos/README.md) |
-| Capítulos 7–13 | Regressão, classificação, árvores, florestas, redes, validação e interpretação | [Modelos](reproducao/modelos/README.md) |
-| Capítulo 14 | Prever a contagem de anéis em abalones | [Estudo Abalone](reproducao/abalone/LEIA_ME.txt) |
-| Capítulo 14 e apêndice A | Ligar e avaliar previsões recebidas em ficheiros | [Previsões em ficheiros](reproducao/previsoes/README.md) |
-| Apêndice B | Fontes, variáveis, omissões e divisões dos dados | [Dicionário dos dados](dados/README.md) |
+| 5 e 6 | K-means e análise de componentes principais | [cap05_06](cap05_06/LEIA-ME.txt) |
+| 7 | Regressão linear | [cap07](cap07/LEIA-ME.txt) |
+| 8 | Regressão logística | [cap08](cap08/LEIA-ME.txt) |
+| 9 e 10 | Árvores de decisão e florestas aleatórias | [cap09_10](cap09_10/LEIA-ME.txt) |
+| 11 | Redes neuronais | [cap11](cap11/LEIA-ME.txt) |
+| 12 e 13 | Validação, interpretação e diagnóstico | [cap12_13](cap12_13/LEIA-ME.txt) |
+| 14 e 15 | Estudos finais com Wisconsin e pinguins e comunicação dos resultados | [cap14_15](cap14_15/LEIA-ME.txt) |
 
-## Reproduzir os estudos
+Cada pasta é autónoma: `codigo/` contém os programas; `dados/`, as entradas;
+`resultados/`, as tabelas, previsões e registos de execução; e `figuras/`,
+os PDF e PNG. Siga o `LEIA-ME.txt` dessa pasta sem juntar programas de
+capítulos diferentes, pois alguns têm o mesmo nome.
 
-Depois de instalar as dependências, abra o terminal na pasta principal:
+## Preparar o ambiente e executar
 
-```bash
-python reproduzir.py desenvolvimento
-python reproduzir.py teste
-python reproduzir.py previsoes
-python reproduzir.py verificar
-```
-
-`desenvolvimento` executa os exemplos e as comparações sem abrir as respostas
-do teste. `teste` lê as decisões guardadas e reproduz as avaliações finais.
-`previsoes` executa as atividades de ligação por identificador.
-`verificar` confere os dados, os ficheiros e os principais resultados.
-Para reconstruir também as divisões dos dados e executar a sequência completa:
+A execução de referência usa Python 3.12.14 e as versões fixadas em
+[requisitos.txt](requisitos.txt). Num terminal, a partir da pasta principal
+extraída do pacote:
 
 ```bash
-python reproduzir.py tudo
+python -m pip install -r requisitos.txt
+python verificar_pacote.py
 ```
 
-Os dados e os resultados de referência já estão incluídos. Reproduzir um
-estudo depois de conhecer os seus resultados permite verificar e compreender
-o procedimento; não constitui uma nova avaliação independente das escolhas.
+O segundo comando confere a cópia recebida antes de alterar ou regenerar
+ficheiros. Depois, execute os comandos do capítulo em
+[COMANDOS.txt](COMANDOS.txt). Por exemplo, para o capítulo 7:
 
-## Ficheiros para trabalhar num caderno
+```bash
+python cap07/codigo/gerar_figuras.py
+```
 
-- [Fundamentos e exploração](fundamentos.ipynb).
-- [Modelos e validação](modelos.ipynb).
-- [Estudo Abalone](estudo_abalone.ipynb).
-- [Previsões recebidas em ficheiros](previsoes_ficheiros.ipynb).
+Para os estudos finais dos capítulos 14 e 15, a ordem é:
 
-Os arquivos [dados_desenvolvimento.zip](dados_desenvolvimento.zip) e
-[dados_teste_reservado.zip](dados_teste_reservado.zip) conservam os nomes e
-as pastas usados nos blocos do livro. Para acompanhar esses blocos num
-caderno pessoal, comece pelo arquivo de desenvolvimento e abra o de teste
-apenas na etapa correspondente.
+```bash
+python cap14_15/codigo/selecionar_desenvolvimento.py
+python cap14_15/codigo/avaliar_teste_final.py --confirmar-teste
+python cap14_15/codigo/gerar_figuras.py
+python cap14_15/codigo/verificar_resultados.py
+```
 
-## Ambiente e fontes
+A seleção usa apenas o desenvolvimento e guarda as escolhas. A avaliação
+confere esse registo e exige `--confirmar-teste` antes de abrir os testes.
+Os programas substituem as suas saídas; guarde separadamente experiências
+que queira conservar.
 
-A execução de referência usa Python 3.12 e as versões indicadas em
-[requisitos.txt](requisitos.txt). Os programas guardam tabelas CSV e figuras
-PNG/PDF; o guia indica onde encontrar cada saída.
+Os dados e resultados de teste apresentados no livro acompanham o pacote.
+A sua reprodução permite conferir e compreender o procedimento; não
+constitui uma nova avaliação independente. Os exemplos são didáticos.
 
-As fontes, atribuições, licenças dos dados e alterações feitas na preparação
-estão em [FONTES_DADOS.md](FONTES_DADOS.md).
+## Fontes e verificação
+
+- [FONTES_DADOS.txt](FONTES_DADOS.txt): fontes, atribuições, licenças dos dados e preparação das cópias de Palmer Penguins e Wisconsin.
+- [VERIFICACAO_EXECUCAO.txt](VERIFICACAO_EXECUCAO.txt): ambiente, comandos e comparações da execução de referência.
+- [manifesto_sha256.json](manifesto_sha256.json) e [verificar_pacote.py](verificar_pacote.py): integridade dos ficheiros da distribuição e dos dois arquivos de dados.
+
+O repositório contém o material de apoio ao leitor. O texto do livro e os
+seus ficheiros LaTeX não fazem parte desta distribuição.

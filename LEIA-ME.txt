@@ -1,0 +1,92 @@
+APRENDIZAGEM AUTOMÁTICA EM BIOCIÊNCIAS
+Material de apoio ao leitor
+
+O QUE CONTÉM
+
+Este pacote reúne os dados, os programas, as saídas numéricas e as figuras
+dos capítulos 5 a 15. Não inclui o texto do livro. Cada pasta tem um guia
+curto e funciona sem consultar as outras pastas de capítulos:
+
+    cap05_06   K-means e análise de componentes principais
+    cap07      Regressão linear
+    cap08      Regressão logística
+    cap09_10   Árvores de decisão e florestas aleatórias
+    cap11      Redes neuronais
+    cap12_13   Validação, interpretação e diagnóstico
+    cap14_15   Estudos de caso finais e comunicação dos resultados
+
+Em cada pasta, codigo/ contém os programas; dados/, as entradas; resultados/,
+as tabelas e os registos numéricos; figuras/, os PDF vetoriais e as cópias PNG.
+Os nomes dos capítulos permitem relacionar estes elementos com o livro.
+
+PARA COMEÇAR
+
+1. Descompacte o pacote numa pasta de trabalho sua. Conserve o ZIP original
+   se quiser recuperar as saídas fornecidas depois de fazer experiências.
+2. Instale as dependências indicadas em requisitos.txt. A execução fornecida
+   foi verificada com Python 3.12.14 e essas versões. Um ambiente diferente
+   pode produzir diferenças ou exigir adaptações; não é uma reprodução
+   automaticamente verificada.
+3. Na pasta principal, consulte COMANDOS.txt e execute a sequência do capítulo
+   pretendido. Os programas localizam as entradas pela sua própria posição.
+4. Consulte os resultados e as figuras na pasta desse capítulo. Os programas
+   substituem as suas saídas; guarde separadamente experiências que queira
+   conservar. Não são necessários os ficheiros LaTeX nem uma instalação LaTeX.
+
+Para instalar num ambiente Python já preparado, no terminal:
+
+    python -m pip install -r requisitos.txt
+
+A instalação pode exigir Internet. Depois dela, os cálculos e as figuras
+usam ficheiros locais; não dependem de descarregar novamente os dados.
+Os exemplos usam CPU, não requerem GPU nem acesso pago a um serviço remoto.
+
+DADOS PARA COPIAR OS BLOCOS DO LIVRO PARA UM CADERNO
+
+Os dois arquivos pequenos permitem começar apenas com as tabelas:
+
+    dados_desenvolvimento.zip
+        dados/penguins_desenvolvimento.csv
+        dados/wisconsin_desenvolvimento.csv
+
+    dados_teste_reservado.zip
+        dados/penguins_teste_reservado.csv
+        dados/wisconsin_teste_reservado.csv
+
+Descompacte o primeiro no diretório de trabalho do caderno. Assim, os
+caminhos dados/... usados nos blocos do livro encontram as tabelas.
+Copie e execute os blocos pela ordem de leitura, com uma sessão própria por
+capítulo. O segundo arquivo destina-se à reprodução da avaliação final.
+
+O pacote completo contém dados e resultados de teste já apresentados no
+livro. Contém também a tabela simplificada integral dos pinguins nas pastas
+que a usam para reconstituir as cópias. Por isso, não assegura sigilo do teste,
+não cria um novo teste independente e não prova que escolhas históricas
+foram feitas antes de conhecer os resultados. Serve para conferir e explorar
+um procedimento didático conhecido. A sequência própria dos estudos finais
+está descrita em cap14_15/LEIA-ME.txt.
+
+CONFERIR A CÓPIA RECEBIDA
+
+Antes de alterar ou regenerar ficheiros, na pasta principal execute:
+
+    python verificar_pacote.py
+
+O programa compara os ficheiros com manifesto_sha256.json e verifica o
+conteúdo dos dois ZIP pequenos. A comparação de integridade não demonstra
+validade científica, autoria nem pré-registo. Após uma exploração própria,
+diferenças face ao manifesto podem ser esperadas. Não edite o manifesto para
+ocultar uma diferença que pretenda investigar.
+
+As tabelas CSV conservam maior precisão do que as tabelas impressas no livro.
+Os JSON identificam versões, divisões, configurações ou controlos. Os
+identificadores de registo permitem relacionar entradas e previsões; não são
+variáveis explicativas nem, no caso de Wisconsin, identificadores clínicos.
+
+FONTES E LIMITES
+
+Consulte FONTES_DADOS.txt para as fontes, licenças e transformações das cópias.
+Os exemplos são didáticos, não uma validação clínica ou biológica externa.
+Não se inclui aqui um programa autónomo de reprodução dos capítulos 1 a 4.
+
+VERIFICACAO_EXECUCAO.txt descreve a execução realizada para esta distribuição.

@@ -1,0 +1,31 @@
+{
+  "origem": "Todos os valores desta secção são fictícios.",
+  "auc": {
+    "partes": [
+      1.0,
+      1.0
+    ],
+    "media_partes": 1.0,
+    "reunida": 0.75
+  },
+  "erros": {
+    "partes": [
+      {
+        "parte": 1,
+        "n": 2,
+        "MAE_g": 100.0,
+        "RMSE_g": 100.0
+      },
+      {
+        "parte": 2,
+        "n": 1,
+        "MAE_g": 300.0,
+        "RMSE_g": 300.0
+      }
+    ],
+    "MAE_medio_simples_g": 200.0,
+    "RMSE_medio_simples_g": 200.0,
+    "MAE_reunido_g": 166.66666666666666,
+    "RMSE_reunido_g": 191.48542155126762
+  }
+}

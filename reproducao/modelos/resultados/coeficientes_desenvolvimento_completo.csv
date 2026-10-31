@@ -1,9 +1,0 @@
-modelo,termo,coeficiente
-linear_simples,constante,-5641.1700054816902
-linear_simples,flipper_length_mm,49.005657113894436
-linear_multipla,constante,-5579.1602515339819
-linear_multipla,flipper_length_mm,46.802306572844344
-linear_multipla,bill_length_mm,8.6837481279063269
-logistica_padronizada,constante,-0.67221018542560329
-logistica_padronizada,mean radius,3.314834624876096
-logistica_padronizada,mean texture,0.86306003095531869

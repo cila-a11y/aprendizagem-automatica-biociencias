@@ -1,0 +1,121 @@
+{
+  "estatuto": "Reprodução didática de um protocolo e de resultados já publicados no livro; não constitui pré-registo nem avaliação prospectiva nova.",
+  "leituras_de_dados_nesta_etapa": [
+    "wisconsin_desenvolvimento.csv",
+    "penguins_desenvolvimento.csv"
+  ],
+  "teste_lido_nesta_etapa": false,
+  "protocolo": {
+    "semente": 2026,
+    "classificacao": {
+      "entradas": [
+        "mean radius",
+        "mean texture"
+      ],
+      "resposta": "maligno",
+      "classe_positiva": 1,
+      "partes": 5,
+      "estratificada": true,
+      "criterio_escolha": "maior média das AUC por parte",
+      "candidatos_em_ordem_de_desempate": [
+        "logistica",
+        "floresta"
+      ],
+      "logistica": {
+        "C": 1,
+        "solver": "lbfgs",
+        "max_iter": 1000,
+        "imputacao": "mediana",
+        "padronizacao": true
+      },
+      "floresta": {
+        "n_estimators": 200,
+        "min_samples_leaf": 5,
+        "max_features": 1,
+        "bootstrap": true,
+        "max_depth": null,
+        "criterion": "gini",
+        "imputacao": "mediana",
+        "n_jobs": 1
+      },
+      "limiares": [
+        0.2,
+        0.3,
+        0.5,
+        0.7
+      ],
+      "sensibilidade_minima_observada": 0.9,
+      "escolha_limiar": "maior especificidade entre os elegíveis; em empate, maior limiar",
+      "regra_decisao": "p >= limiar",
+      "referencia_probabilidade": "frequência de malignidade no treino",
+      "referencia_decisao": "sempre benigno; não aplicar o limiar escolhido para o modelo"
+    },
+    "regressao": {
+      "entradas": [
+        "flipper_length_mm",
+        "bill_length_mm"
+      ],
+      "resposta": "body_mass_g",
+      "unidade_resposta": "g",
+      "partes": 5,
+      "estratificada": false,
+      "criterio_escolha": "menor média dos MAE por parte",
+      "candidatos_em_ordem_de_desempate": [
+        "linear",
+        "floresta"
+      ],
+      "linear": {
+        "imputacao": "mediana",
+        "fit_intercept": true
+      },
+      "floresta": {
+        "n_estimators": 200,
+        "min_samples_leaf": 5,
+        "max_features": 1,
+        "bootstrap": true,
+        "max_depth": null,
+        "criterion": "squared_error",
+        "imputacao": "mediana",
+        "n_jobs": 1
+      },
+      "referencia": "mediana da massa no treino",
+      "exclusao": "apenas respostas ausentes; não imputar a resposta"
+    }
+  },
+  "escolhas": {
+    "classificacao": "logistica",
+    "limiar": 0.2,
+    "regressao": "floresta"
+  },
+  "n_desenvolvimento_classificacao": 455,
+  "n_desenvolvimento_regressao_total": 275,
+  "n_desenvolvimento_regressao_elegivel": 273,
+  "mediana_desenvolvimento_g": 4050.0,
+  "frequencia_maligna_desenvolvimento": 0.37362637362637363,
+  "sha256_desenvolvimento": {
+    "wisconsin_desenvolvimento.csv": "997edc11984a788044ef3ceb17595f0b77b1aac91a7186e8afd3c2dde3b6153d",
+    "penguins_desenvolvimento.csv": "8f3a9c1a2acef4ce13f8ba13cd30927194b0c30b73d83eaa82d65d269abb03d0"
+  },
+  "sha256_codigo": {
+    "modelos.py": "899a38373912b37b334760a3c5ebb04909876da70a5cb98698c19d813768d0a3",
+    "selecionar_desenvolvimento.py": "695788b156244dfbee104e4abd60ff91cfdaef44d4398905363c60ee059842e9"
+  },
+  "sha256_resultados_selecao": {
+    "classificacao_validacao_por_parte.csv": "f84ad3760155c38592d348b1b75545bce9252a4ed1a7dfee8d19fbd0512278d0",
+    "classificacao_validacao_resumo.csv": "c86f5e9482fa9e98737fe68d36d0425b435677cc27c51f146e8f763fc715c62b",
+    "classificacao_validacao_previsoes.csv": "7778dc6497000be1b25ecde16023a0bc8a29fbbd4fed83ffdc96bdede6ea3588",
+    "classificacao_particoes.json": "a39ebe145beb0ce6142101b8cd6fbf46475c0f088b333daa3052b519cee3d13f",
+    "regressao_validacao_por_parte.csv": "78588d6226b9a0f3155a9a93a9d791a7661e1dc7f0f791a11e2e9a9da365e7fb",
+    "regressao_validacao_resumo.csv": "bbcc0be021713b9ce685fd2e2fd5b0979aebb686f73fc208369cf1fe2a0931fd",
+    "regressao_validacao_previsoes.csv": "3f6b91f0b64a8277b463e09f2d252ce555793641372034e5e9d390d01843cb65",
+    "regressao_particoes.json": "8851f69db7075dbdad339927c46469c0a2069cc43b760ee5b5176372e48aecf2",
+    "limiares_validacao.csv": "36094d622b04c68d492fa6b89730fe0b5032533fc1f6c75295477a73c8a69ec8"
+  },
+  "versoes": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0"
+  }
+}

@@ -1,0 +1,22 @@
+CAPÍTULO 7 — REGRESSÃO LINEAR
+
+Com as dependências instaladas pelo requisitos.txt da pasta principal,
+execute nesta pasta:
+
+    python codigo/gerar_figuras.py
+
+O programa calcula previsões, medidas, coeficientes e três figuras. Usa
+273 pinguins de desenvolvimento com massa observada. Os registos 4 e 272
+continuam no CSV, mas não entram nas regressões; a resposta não é imputada.
+
+previsoes_validacao.csv reúne previsões das cinco partes; metricas_validacao.csv
+contém as medidas dessas previsões reunidas. metricas_por_parte.csv apresenta
+separadamente as medidas de cada parte. Os coeficientes e registos da figura
+do ajustamento completo têm ficheiros próprios: não são confundidos com
+previsões de validação. padroes_ficticios.csv corresponde a uma ilustração
+de padrões de resíduos, não a novos dados reais.
+
+As divisões estão registadas por id_registo. Não se usa o teste reservado.
+Os comandos substituem os seus próprios resultados e figuras. Conserve
+separadamente experiências que queira comparar. Fonte e atribuição em
+../FONTES_DADOS.txt; os blocos do livro usam dados/ nesta pasta de trabalho.

@@ -1,0 +1,65 @@
+VERIFICAÇÃO DA DISTRIBUIÇÃO
+31 de outubro de 2026
+
+Ambiente usado nesta verificação:
+    Python 3.12.14
+    NumPy 2.3.5
+    pandas 2.2.3
+    SciPy 1.17.0
+    scikit-learn 1.8.0
+    Matplotlib 3.10.8
+    threadpoolctl 3.6.0
+
+Foram executados, nas cópias deste pacote, os 18 comandos seguintes.
+Cada programa correu num processo Python separado, a partir da pasta
+principal, e terminou com código de saída 0:
+
+    cap05_06/codigo/preparar_dados.py
+    cap05_06/codigo/gerar_figuras.py
+    cap07/codigo/gerar_figuras.py
+    cap08/codigo/preparar_dados.py
+    cap08/codigo/gerar_figuras.py
+    cap09_10/codigo/validar_dados.py
+    cap09_10/codigo/gerar_resultados.py
+    cap09_10/codigo/gerar_figuras.py
+    cap11/codigo/gerar_resultados.py
+    cap11/codigo/gerar_figuras.py
+    cap12_13/codigo/gerar_resultados.py
+    cap12_13/codigo/gerar_figuras_12.py
+    cap12_13/codigo/gerar_figuras_13.py
+    cap14_15/codigo/preparar_dados.py
+    cap14_15/codigo/selecionar_desenvolvimento.py
+    cap14_15/codigo/avaliar_teste_final.py --confirmar-teste
+    cap14_15/codigo/gerar_figuras.py
+    cap14_15/codigo/verificar_resultados.py
+
+Foram mantidas as ordens internas indicadas em COMANDOS.txt.
+O programa modelos.py é importado pelos casos finais, não é uma etapa de
+execução separada. Os três comandos preparar_dados.py são opcionais para
+o leitor, porque as cópias já acompanham o pacote.
+
+Depois da execução:
+
+- As 14 cópias CSV de dados, contando as repetições entre pastas, conservaram
+  identidade byte a byte com as fontes de distribuição.
+- Os 19 programas copiados conservaram identidade byte a byte com as suas
+  fontes de cálculo.
+- Os 84 CSV de resultados coincidiram com os resultados de referência
+  quanto a colunas, ordem das linhas, tipos e valores, usando tolerâncias
+  numéricas rtol=1e-9 e atol=1e-8 nas comparações de ponto flutuante.
+- As matrizes da NPZ do capítulo 11 coincidiram nas mesmas tolerâncias.
+- Os 37 PDF e os 37 PNG foram regenerados e tiveram a integridade estrutural
+  básica conferida. Esta conferência não substitui a inspeção científica
+  e visual das figuras.
+- A avaliação final sem --confirmar-teste terminou com código 2 e a mensagem
+  prevista, antes de executar a avaliação.
+
+Esta verificação foi local, no ambiente indicado; não foi uma execução
+remota no Google Colab. A disponibilidade e as versões dos ambientes
+remotos podem mudar. A reprodução numérica não é uma avaliação independente
+dos dados, não prova pré-registo e não demonstra adequação a uso real.
+
+O manifesto de integridade identifica os ficheiros efetivamente distribuídos
+depois desta execução. O verificador do pacote não ajusta modelos; apenas
+confere a correspondência dos ficheiros com esse manifesto e o conteúdo
+dos dois ZIP pequenos de dados.

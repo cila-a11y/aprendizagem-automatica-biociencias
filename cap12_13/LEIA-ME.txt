@@ -1,0 +1,39 @@
+CAPÍTULOS 12 E 13 — VALIDAÇÃO E INTERPRETAÇÃO
+
+Com as dependências instaladas pelo requisitos.txt da pasta principal,
+execute nesta pasta, por esta ordem:
+
+    python codigo/gerar_resultados.py
+    python codigo/gerar_figuras_12.py
+    python codigo/gerar_figuras_13.py
+
+O primeiro programa calcula os resultados e documenta as divisões por
+identificador; os outros produzem três esquemas e quatro figuras.
+Não se consulta o teste reservado. As cópias de desenvolvimento são as
+mesmas usadas anteriormente: Wisconsin 455 linhas; pinguins 275 linhas,
+das quais 273 com massa observada entram na regressão.
+
+Os prefixos dos ficheiros distinguem experiências que não devem ser misturadas:
+
+- aninhada_*: seleção de C entre 0.1, 1 e 10 em quatro partes interiores
+  e avaliação em cinco exteriores. Inclui 65 ajustamentos, contando os
+  cinco reajustamentos; não inclui uma procura final nas 455 amostras.
+- classificacao_* e calibracao_faixas.csv: logística com C=1 fixo, nas
+  cinco partes habituais. Não são resultados da seleção aninhada.
+- regressao_*: regressão linear de duas entradas e referência mediana;
+  a espécie organiza a análise dos erros, mas não é entrada do modelo.
+- permutacao_*: floresta fixa numa divisão interna 318/137, com 20
+  permutações de cada entrada. O modelo não é reajustado a cada permutação.
+- dependencia_*: ilustração da geometria dos dados ao baralhar variáveis;
+  o perímetro não foi acrescentado ao classificador.
+- exemplo_ficticio_* e exemplos_ficticios.json: pequenos exemplos de
+  contas, grupos e cronologia, expressamente fictícios.
+
+O desvio entre partes usa ddof=1; o das repetições de permutação usa ddof=0.
+Nenhum deles é um intervalo de confiança. Os avisos dos ajustes são
+registados em avisos.json e nos registos específicos, quando aplicável.
+
+Os programas substituem resultados e figuras, mas não os CSV de entrada.
+Guarde separadamente as suas experiências. Fonte e atribuição em
+../FONTES_DADOS.txt. Para os blocos do livro, use esta pasta como diretório
+de trabalho e uma sessão própria para cada capítulo.

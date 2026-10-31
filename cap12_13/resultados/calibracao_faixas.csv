@@ -1,0 +1,11 @@
+versao,faixa,limite_inferior_incluido,limite_superior,limite_superior_incluido,n,n_malignos,probabilidade_media,fracao_maligna
+Logistica,1,0,0.2,False,235,10,0.057814069520015,0.0425531914893617
+Logistica,2,0.2,0.4,False,46,15,0.279370200442984,0.326086956521739
+Logistica,3,0.4,0.6,False,36,18,0.489939044151789,0.5
+Logistica,4,0.6,0.8,False,26,16,0.713598145069707,0.615384615384615
+Logistica,5,0.8,1,True,112,111,0.958532765247115,0.991071428571429
+Frequencia no treino,1,0,0.2,False,0,0,,
+Frequencia no treino,2,0.2,0.4,False,455,170,0.373626373626374,0.373626373626374
+Frequencia no treino,3,0.4,0.6,False,0,0,,
+Frequencia no treino,4,0.6,0.8,False,0,0,,
+Frequencia no treino,5,0.8,1,True,0,0,,

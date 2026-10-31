@@ -1,0 +1,79 @@
+FONTES, ATRIBUIÇÃO E PREPARAÇÃO DAS CÓPIAS
+
+PALMER PENGUINS
+
+Horst, A. M., Hill, A. P. e Gorman, K. B. (2020). palmerpenguins:
+Palmer Archipelago (Antarctica) penguin data.
+https://allisonhorst.github.io/palmerpenguins/
+https://doi.org/10.5281/zenodo.3960218
+
+Dados recolhidos por Kristen Gorman e Palmer Station LTER.
+Tabela simplificada de origem:
+https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/inst/extdata/penguins.csv
+
+Artigo associado à recolha:
+Gorman, K. B., Williams, T. D. e Fraser, W. R. (2014). Ecological sexual
+dimorphism and environmental variability within a community of Antarctic
+penguins (genus Pygoscelis). PLOS ONE, 9(3), e90081.
+https://doi.org/10.1371/journal.pone.0090081
+
+Disponibilização dos dados indicada pela fonte: CC0.
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Preparação didática: acrescentar id_registo de 1 a 344, pela ordem da fonte;
+reservar 20% por train_test_split(test_size=0.2, random_state=2026), sem
+estratificação; ordenar cada cópia por id_registo. Obtêm-se 275 registos de
+desenvolvimento e 69 de teste. Nos exemplos supervisionados, não se imputam
+as respostas ausentes: os registos de desenvolvimento 4 e 272 não têm massa
+observada e ficam fora desses ajustamentos e avaliações. Os dados não são
+reescritos para apagar essas duas linhas.
+
+A tabela simplificada integral está em cap05_06/dados/ e cap14_15/dados/,
+apenas para reconstituir a preparação. Não é a tabela mais extensa
+penguins_raw. Não está no ZIP pequeno de desenvolvimento, pois inclui
+também os registos que compõem o teste.
+
+SHA256 da tabela simplificada integral:
+f204db2c753b0937caac3cb35258562c14f073e4bbc76be24b4c51ce22767a93
+SHA256 do desenvolvimento:
+8f3a9c1a2acef4ce13f8ba13cd30927194b0c30b73d83eaa82d65d269abb03d0
+SHA256 do teste:
+81e9a7144788f1a2ab734c5b6fe445c1a93dd4174af4f9a5441b8862a83d65b4
+
+BREAST CANCER WISCONSIN (DIAGNOSTIC)
+
+Wolberg, W., Mangasarian, O., Street, N. e Street, W. (1993).
+Breast Cancer Wisconsin (Diagnostic). UCI Machine Learning Repository.
+https://doi.org/10.24432/C5DW2B
+
+Cópia fornecida pelo scikit-learn:
+sklearn.datasets.load_breast_cancer(as_frame=True)
+https://scikit-learn.org/1.8/modules/generated/sklearn.datasets.load_breast_cancer.html
+
+Licença indicada pelo repositório UCI: Creative Commons Attribution 4.0.
+https://creativecommons.org/licenses/by/4.0/
+
+Preparação didática: acrescentar id_registo de 1 a 569, pela ordem da tabela
+incluída no scikit-learn; criar maligno=1-target; reservar 20% com
+train_test_split(test_size=0.2, stratify=maligno, random_state=2026);
+ordenar cada cópia por id_registo. A classe 1 passa a significar maligno e
+a classe 0, benigno. O desenvolvimento tem 455 amostras (170 malignas e
+285 benignas); o teste tem 114 (42 malignas e 72 benignas).
+
+SHA256 do desenvolvimento:
+997edc11984a788044ef3ceb17595f0b77b1aac91a7186e8afd3c2dde3b6153d
+SHA256 do teste:
+31bda54e64c273d21ec42ec4a080f6ac7fab36cf2709891ea7a7df3239d09ade
+
+IDENTIFICADORES, TRANSFORMAÇÕES E USO
+
+id_registo identifica a posição na fonte utilizada. Não é um preditor,
+um identificador clínico nem uma garantia de identidade biológica única.
+As padronizações e imputações dos exemplos supervisionados são operações
+dos procedimentos de treino, não alterações globais dos CSV distribuídos.
+
+As cópias de desenvolvimento são idênticas entre os capítulos que as usam.
+Os dados originais continuam sujeitos às condições indicadas pelas suas
+fontes. A indicação das licenças dos dados não atribui uma licença adicional
+ao texto do livro, aos programas ou às figuras. Este pacote não contém o
+texto do livro e não deve ser confundido com uma autorização para o divulgar.

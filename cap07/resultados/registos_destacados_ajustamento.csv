@@ -1,0 +1,3 @@
+id_registo,flipper_length_mm,body_mass_g,prevista_treino_g,residuo_treino_g
+1,181.0,3750.0,3228.8539321332028,521.1460678667972
+3,195.0,3250.0,3914.9331317277247,-664.9331317277247

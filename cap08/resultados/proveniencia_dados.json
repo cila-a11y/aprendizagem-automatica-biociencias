@@ -1,0 +1,25 @@
+{
+  "fonte": "sklearn.datasets.load_breast_cancer(as_frame=True)",
+  "conjunto": "Breast Cancer Wisconsin (Diagnostic)",
+  "doi": "https://doi.org/10.24432/C5DW2B",
+  "licenca_fonte": "CC BY 4.0, conforme a indicação do repositório UCI",
+  "identificador": "id_registo: posição original, de 1 a 569; não é preditor",
+  "classe_original": {
+    "0": "maligno",
+    "1": "benigno"
+  },
+  "recodificacao": "maligno = 1 - target",
+  "divisao": "train_test_split(test_size=0.20, stratify=maligno, random_state=2026)",
+  "ordem_guardada": "id_registo crescente",
+  "registos_desenvolvimento": 455,
+  "malignos": 170,
+  "benignos": 285,
+  "registos_reservados_excluidos_deste_pacote": 114,
+  "teste_avaliado": false,
+  "sha256_csv_desenvolvimento": "997edc11984a788044ef3ceb17595f0b77b1aac91a7186e8afd3c2dde3b6153d",
+  "versoes": {
+    "scikit_learn": "1.8.0",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5"
+  }
+}

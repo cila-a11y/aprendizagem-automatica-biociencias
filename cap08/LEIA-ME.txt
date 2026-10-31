@@ -1,0 +1,29 @@
+CAPÍTULO 8 — REGRESSÃO LOGÍSTICA
+
+Com as dependências instaladas pelo requisitos.txt da pasta principal,
+execute nesta pasta:
+
+    python codigo/gerar_figuras.py
+
+O programa calcula previsões de validação, medidas para quatro limiares,
+as AUC por parte e reunida, coeficientes e cinco figuras. Usa as 455 amostras
+de desenvolvimento de Wisconsin, sem consultar o teste. A classe 1 é
+maligna; as duas entradas são mean radius e mean texture.
+
+previsoes_validacao.csv e roc_validacao.csv provêm das cinco partes.
+coeficientes_ajustamento_completo.csv e o mapa de fronteiras provêm de um
+ajustamento às 455 amostras e têm finalidade ilustrativa. A sigmoide é uma
+curva matemática; amostras_roc_ficticias.csv e roc_construcao_ficticia.csv
+documentam o pequeno exemplo fictício de construção manual da ROC.
+
+A preparação opcional da cópia de desenvolvimento, a partir dos dados
+incluídos no scikit-learn, faz-se com:
+
+    python codigo/preparar_dados.py
+
+Este comando reescreve o desenvolvimento; não guarda nem avalia o teste.
+As divisões e a proveniência estão nos JSON de resultados/.
+
+Os comandos substituem as suas saídas. Guarde separadamente alterações
+que queira conservar. Fonte e atribuição em ../FONTES_DADOS.txt; os blocos
+do livro usam dados/ nesta pasta de trabalho. O exemplo não é validação clínica.

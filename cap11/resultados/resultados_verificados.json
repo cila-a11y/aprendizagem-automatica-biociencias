@@ -1,0 +1,799 @@
+{
+  "ambiente": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.8.0"
+  },
+  "hash_dados": "997edc11984a788044ef3ceb17595f0b77b1aac91a7186e8afd3c2dde3b6153d",
+  "n_desenvolvimento": 455,
+  "n_benignas": 285,
+  "n_malignas": 170,
+  "teste_reservado_utilizado": false,
+  "medias_partes": [
+    {
+      "chave": "logistica",
+      "procedimento": "Logística",
+      "treino_AUC_media": 0.953328173374613,
+      "treino_AUC_dp": 0.002896863480408535,
+      "treino_acerto_media": 0.8967032967032967,
+      "treino_acerto_dp": 0.010205591000553143,
+      "treino_log_loss_media": 0.25329592549763186,
+      "treino_log_loss_dp": 0.009335773042624809,
+      "validacao_AUC_media": 0.9521155830753354,
+      "validacao_AUC_dp": 0.00988101781404845,
+      "validacao_acerto_media": 0.8945054945054945,
+      "validacao_acerto_dp": 0.04007600555782521,
+      "validacao_log_loss_media": 0.25690124804253467,
+      "validacao_log_loss_dp": 0.038669802929391164
+    },
+    {
+      "chave": "floresta_folha_5",
+      "procedimento": "Floresta folha mínima 5",
+      "treino_AUC_media": 0.9859907120743033,
+      "treino_AUC_dp": 0.0025400229287102422,
+      "treino_acerto_media": 0.9318681318681319,
+      "treino_acerto_dp": 0.00898649848010773,
+      "treino_log_loss_media": 0.16834081804558815,
+      "treino_log_loss_dp": 0.01157586589153897,
+      "validacao_AUC_media": 0.9336429308565531,
+      "validacao_AUC_dp": 0.03559735813186711,
+      "validacao_acerto_media": 0.8813186813186814,
+      "validacao_acerto_dp": 0.03049326796815736,
+      "validacao_log_loss_media": 0.28640076284543864,
+      "validacao_log_loss_dp": 0.07949387566527441
+    },
+    {
+      "chave": "rede_8",
+      "procedimento": "Rede com 8 unidades",
+      "treino_AUC_media": 0.9616292569659443,
+      "treino_AUC_dp": 0.005693399448477069,
+      "treino_acerto_media": 0.904945054945055,
+      "treino_acerto_dp": 0.013261009215546331,
+      "treino_log_loss_media": 0.2227360480743134,
+      "treino_log_loss_dp": 0.017330304386228703,
+      "validacao_AUC_media": 0.9437564499484005,
+      "validacao_AUC_dp": 0.03204164023995882,
+      "validacao_acerto_media": 0.8923076923076924,
+      "validacao_acerto_dp": 0.03758820082744414,
+      "validacao_log_loss_media": 0.26578573856712884,
+      "validacao_log_loss_dp": 0.08251072535994185
+    },
+    {
+      "chave": "rede_32",
+      "procedimento": "Rede com 32 unidades",
+      "treino_AUC_media": 0.9672213622291022,
+      "treino_AUC_dp": 0.005014891914302443,
+      "treino_acerto_media": 0.9120879120879121,
+      "treino_acerto_dp": 0.009111606566910407,
+      "treino_log_loss_media": 0.205271984269141,
+      "treino_log_loss_dp": 0.013996582680542562,
+      "validacao_AUC_media": 0.9360165118679051,
+      "validacao_AUC_dp": 0.0354106279147749,
+      "validacao_acerto_media": 0.8835164835164834,
+      "validacao_acerto_dp": 0.04155531956305284,
+      "validacao_log_loss_media": 0.2939153638036865,
+      "validacao_log_loss_dp": 0.09069934059481993
+    }
+  ],
+  "previsoes_reunidas": [
+    {
+      "chave": "logistica",
+      "procedimento": "Logística",
+      "AUC": 0.9518059855521156,
+      "log_loss": 0.25690124804253467,
+      "acerto": 0.8945054945054945,
+      "VN": 268,
+      "FP": 17,
+      "FN": 31,
+      "VP": 139,
+      "empates_050": 0
+    },
+    {
+      "chave": "floresta_folha_5",
+      "procedimento": "Floresta folha mínima 5",
+      "AUC": 0.9350877192982456,
+      "log_loss": 0.28640076284543864,
+      "acerto": 0.8813186813186813,
+      "VN": 262,
+      "FP": 23,
+      "FN": 31,
+      "VP": 139,
+      "empates_050": 0
+    },
+    {
+      "chave": "rede_8",
+      "procedimento": "Rede com 8 unidades",
+      "AUC": 0.9427450980392157,
+      "log_loss": 0.2657857385671288,
+      "acerto": 0.8923076923076924,
+      "VN": 266,
+      "FP": 19,
+      "FN": 30,
+      "VP": 140,
+      "empates_050": 0
+    },
+    {
+      "chave": "rede_32",
+      "procedimento": "Rede com 32 unidades",
+      "AUC": 0.9353147574819402,
+      "log_loss": 0.2939153638036865,
+      "acerto": 0.8835164835164835,
+      "VN": 264,
+      "FP": 21,
+      "FN": 32,
+      "VP": 138,
+      "empates_050": 0
+    }
+  ],
+  "ajustes_validacao": [
+    {
+      "chave": "logistica",
+      "parte": 1,
+      "avisos": []
+    },
+    {
+      "chave": "logistica",
+      "parte": 2,
+      "avisos": []
+    },
+    {
+      "chave": "logistica",
+      "parte": 3,
+      "avisos": []
+    },
+    {
+      "chave": "logistica",
+      "parte": 4,
+      "avisos": []
+    },
+    {
+      "chave": "logistica",
+      "parte": 5,
+      "avisos": []
+    },
+    {
+      "chave": "floresta_folha_5",
+      "parte": 1,
+      "avisos": []
+    },
+    {
+      "chave": "floresta_folha_5",
+      "parte": 2,
+      "avisos": []
+    },
+    {
+      "chave": "floresta_folha_5",
+      "parte": 3,
+      "avisos": []
+    },
+    {
+      "chave": "floresta_folha_5",
+      "parte": 4,
+      "avisos": []
+    },
+    {
+      "chave": "floresta_folha_5",
+      "parte": 5,
+      "avisos": []
+    },
+    {
+      "chave": "rede_8",
+      "parte": 1,
+      "avisos": [],
+      "epocas_fit": 257,
+      "loss_interna_final": 0.24203734526003873,
+      "loss_interna_minima": 0.23684214150214195,
+      "log_loss_treino_fim_ultima_epoca": 0.24084677575700472,
+      "parametros": {
+        "pesos": 24,
+        "termos_constantes": 9,
+        "total": 33,
+        "formas_pesos": [
+          [
+            2,
+            8
+          ],
+          [
+            8,
+            1
+          ]
+        ],
+        "formas_constantes": [
+          [
+            8
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "out_activation": "logistic",
+      "t_amostras_processadas": 93548,
+      "medias_padronizacao": [
+        14.127598901098901,
+        19.250109890109886
+      ],
+      "escalas_padronizacao": [
+        3.538341847734241,
+        4.194032782052991
+      ]
+    },
+    {
+      "chave": "rede_8",
+      "parte": 2,
+      "avisos": [],
+      "epocas_fit": 312,
+      "loss_interna_final": 0.23115508634130247,
+      "loss_interna_minima": 0.22971600477373372,
+      "log_loss_treino_fim_ultima_epoca": 0.22920677829845607,
+      "parametros": {
+        "pesos": 24,
+        "termos_constantes": 9,
+        "total": 33,
+        "formas_pesos": [
+          [
+            2,
+            8
+          ],
+          [
+            8,
+            1
+          ]
+        ],
+        "formas_constantes": [
+          [
+            8
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "out_activation": "logistic",
+      "t_amostras_processadas": 113568,
+      "medias_padronizacao": [
+        14.09366208791209,
+        19.230054945054945
+      ],
+      "escalas_padronizacao": [
+        3.5099492809008996,
+        4.2207131183900986
+      ]
+    },
+    {
+      "chave": "rede_8",
+      "parte": 3,
+      "avisos": [],
+      "epocas_fit": 272,
+      "loss_interna_final": 0.2013242333255068,
+      "loss_interna_minima": 0.19968507106666875,
+      "log_loss_treino_fim_ultima_epoca": 0.19848433341798438,
+      "parametros": {
+        "pesos": 24,
+        "termos_constantes": 9,
+        "total": 33,
+        "formas_pesos": [
+          [
+            2,
+            8
+          ],
+          [
+            8,
+            1
+          ]
+        ],
+        "formas_constantes": [
+          [
+            8
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "out_activation": "logistic",
+      "t_amostras_processadas": 99008,
+      "medias_padronizacao": [
+        14.194016483516481,
+        19.221703296703293
+      ],
+      "escalas_padronizacao": [
+        3.673909068061924,
+        4.188634459730507
+      ]
+    },
+    {
+      "chave": "rede_8",
+      "parte": 4,
+      "avisos": [],
+      "epocas_fit": 291,
+      "loss_interna_final": 0.23595304478924845,
+      "loss_interna_minima": 0.23476985339689557,
+      "log_loss_treino_fim_ultima_epoca": 0.23360043219388546,
+      "parametros": {
+        "pesos": 24,
+        "termos_constantes": 9,
+        "total": 33,
+        "formas_pesos": [
+          [
+            2,
+            8
+          ],
+          [
+            8,
+            1
+          ]
+        ],
+        "formas_constantes": [
+          [
+            8
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "out_activation": "logistic",
+      "t_amostras_processadas": 105924,
+      "medias_padronizacao": [
+        14.15093131868132,
+        19.322527472527472
+      ],
+      "escalas_padronizacao": [
+        3.6499262446571055,
+        4.2152412086436355
+      ]
+    },
+    {
+      "chave": "rede_8",
+      "parte": 5,
+      "avisos": [],
+      "epocas_fit": 184,
+      "loss_interna_final": 0.2131311285337131,
+      "loss_interna_minima": 0.21280527638640345,
+      "log_loss_treino_fim_ultima_epoca": 0.21154192070423658,
+      "parametros": {
+        "pesos": 24,
+        "termos_constantes": 9,
+        "total": 33,
+        "formas_pesos": [
+          [
+            2,
+            8
+          ],
+          [
+            8,
+            1
+          ]
+        ],
+        "formas_constantes": [
+          [
+            8
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "out_activation": "logistic",
+      "t_amostras_processadas": 66976,
+      "medias_padronizacao": [
+        14.137549450549448,
+        19.203516483516484
+      ],
+      "escalas_padronizacao": [
+        3.698975969856606,
+        4.190979093984103
+      ]
+    },
+    {
+      "chave": "rede_32",
+      "parte": 1,
+      "avisos": [],
+      "epocas_fit": 569,
+      "loss_interna_final": 0.21999791153674986,
+      "loss_interna_minima": 0.21191026589817435,
+      "log_loss_treino_fim_ultima_epoca": 0.20768838885143523,
+      "parametros": {
+        "pesos": 96,
+        "termos_constantes": 33,
+        "total": 129,
+        "formas_pesos": [
+          [
+            2,
+            32
+          ],
+          [
+            32,
+            1
+          ]
+        ],
+        "formas_constantes": [
+          [
+            32
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "out_activation": "logistic",
+      "t_amostras_processadas": 207116,
+      "medias_padronizacao": [
+        14.127598901098901,
+        19.250109890109886
+      ],
+      "escalas_padronizacao": [
+        3.538341847734241,
+        4.194032782052991
+      ]
+    },
+    {
+      "chave": "rede_32",
+      "parte": 2,
+      "avisos": [],
+      "epocas_fit": 615,
+      "loss_interna_final": 0.20258101224974998,
+      "loss_interna_minima": 0.20094662481250852,
+      "log_loss_treino_fim_ultima_epoca": 0.19762478898994196,
+      "parametros": {
+        "pesos": 96,
+        "termos_constantes": 33,
+        "total": 129,
+        "formas_pesos": [
+          [
+            2,
+            32
+          ],
+          [
+            32,
+            1
+          ]
+        ],
+        "formas_constantes": [
+          [
+            32
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "out_activation": "logistic",
+      "t_amostras_processadas": 223860,
+      "medias_padronizacao": [
+        14.09366208791209,
+        19.230054945054945
+      ],
+      "escalas_padronizacao": [
+        3.5099492809008996,
+        4.2207131183900986
+      ]
+    },
+    {
+      "chave": "rede_32",
+      "parte": 3,
+      "avisos": [],
+      "epocas_fit": 262,
+      "loss_interna_final": 0.19894613612932588,
+      "loss_interna_minima": 0.19706813960754885,
+      "log_loss_treino_fim_ultima_epoca": 0.19530590533484482,
+      "parametros": {
+        "pesos": 96,
+        "termos_constantes": 33,
+        "total": 129,
+        "formas_pesos": [
+          [
+            2,
+            32
+          ],
+          [
+            32,
+            1
+          ]
+        ],
+        "formas_constantes": [
+          [
+            32
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "out_activation": "logistic",
+      "t_amostras_processadas": 95368,
+      "medias_padronizacao": [
+        14.194016483516481,
+        19.221703296703293
+      ],
+      "escalas_padronizacao": [
+        3.673909068061924,
+        4.188634459730507
+      ]
+    },
+    {
+      "chave": "rede_32",
+      "parte": 4,
+      "avisos": [],
+      "epocas_fit": 220,
+      "loss_interna_final": 0.2329475280186876,
+      "loss_interna_minima": 0.2302005736235514,
+      "log_loss_treino_fim_ultima_epoca": 0.22875285510021212,
+      "parametros": {
+        "pesos": 96,
+        "termos_constantes": 33,
+        "total": 129,
+        "formas_pesos": [
+          [
+            2,
+            32
+          ],
+          [
+            32,
+            1
+          ]
+        ],
+        "formas_constantes": [
+          [
+            32
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "out_activation": "logistic",
+      "t_amostras_processadas": 80080,
+      "medias_padronizacao": [
+        14.15093131868132,
+        19.322527472527472
+      ],
+      "escalas_padronizacao": [
+        3.6499262446571055,
+        4.2152412086436355
+      ]
+    },
+    {
+      "chave": "rede_32",
+      "parte": 5,
+      "avisos": [],
+      "epocas_fit": 357,
+      "loss_interna_final": 0.1994624806747151,
+      "loss_interna_minima": 0.19929933811201783,
+      "log_loss_treino_fim_ultima_epoca": 0.19698798306927082,
+      "parametros": {
+        "pesos": 96,
+        "termos_constantes": 33,
+        "total": 129,
+        "formas_pesos": [
+          [
+            2,
+            32
+          ],
+          [
+            32,
+            1
+          ]
+        ],
+        "formas_constantes": [
+          [
+            32
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "out_activation": "logistic",
+      "t_amostras_processadas": 129948,
+      "medias_padronizacao": [
+        14.137549450549448,
+        19.203516483516484
+      ],
+      "escalas_padronizacao": [
+        3.698975969856606,
+        4.190979093984103
+      ]
+    }
+  ],
+  "curvas": [
+    {
+      "unidades": 8,
+      "parametros": {
+        "pesos": 24,
+        "termos_constantes": 9,
+        "total": 33,
+        "formas_pesos": [
+          [
+            2,
+            8
+          ],
+          [
+            8,
+            1
+          ]
+        ],
+        "formas_constantes": [
+          [
+            8
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "menor_perda_validacao_200_epocas": 0.19929180841797847,
+      "epoca_menor_perda_validacao": 24,
+      "epoca_menor_perda_entre_selecionadas": 25,
+      "menor_perda_treino_200_epocas": 0.24225602352719533,
+      "epoca_200": {
+        "unidades": 8,
+        "epoca": 200,
+        "perda_treino": 0.24225602352719533,
+        "perda_validacao": 0.20845098503751713,
+        "AUC_treino": 0.9527891558633503,
+        "AUC_validacao": 0.9737802097583219,
+        "acerto_treino": 0.8962264150943396,
+        "acerto_validacao": 0.8905109489051095,
+        "loss_interna": 0.24335625118583548,
+        "n_iter_ultima_chamada": 1,
+        "t_amostras_processadas": 63600,
+        "atualizacoes_adam": 2000
+      },
+      "avisos": [],
+      "estado_adam_conservado": true,
+      "nota": "Épocas contadas pelo ciclo. As chamadas partial_fit não são a execução fit da validação cruzada."
+    },
+    {
+      "unidades": 32,
+      "parametros": {
+        "pesos": 96,
+        "termos_constantes": 33,
+        "total": 129,
+        "formas_pesos": [
+          [
+            2,
+            32
+          ],
+          [
+            32,
+            1
+          ]
+        ],
+        "formas_constantes": [
+          [
+            32
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "menor_perda_validacao_200_epocas": 0.19656298472477512,
+      "epoca_menor_perda_validacao": 9,
+      "epoca_menor_perda_entre_selecionadas": 10,
+      "menor_perda_treino_200_epocas": 0.22867496730460848,
+      "epoca_200": {
+        "unidades": 32,
+        "epoca": 200,
+        "perda_treino": 0.22867496730460848,
+        "perda_validacao": 0.22028640634171875,
+        "AUC_treino": 0.9564207592584771,
+        "AUC_validacao": 0.9694482444140446,
+        "acerto_treino": 0.9056603773584906,
+        "acerto_validacao": 0.8978102189781022,
+        "loss_interna": 0.23105984406905006,
+        "n_iter_ultima_chamada": 1,
+        "t_amostras_processadas": 63600,
+        "atualizacoes_adam": 2000
+      },
+      "avisos": [],
+      "estado_adam_conservado": true,
+      "nota": "Épocas contadas pelo ciclo. As chamadas partial_fit não são a execução fit da validação cruzada."
+    }
+  ],
+  "ajustamentos_completos": [
+    {
+      "unidades": 8,
+      "n_treino": 455,
+      "uso": "Ajustamento ao desenvolvimento completo para ilustração; não é avaliação de validação.",
+      "epocas_fit": 165,
+      "parametros": {
+        "pesos": 24,
+        "termos_constantes": 9,
+        "total": 33,
+        "formas_pesos": [
+          [
+            2,
+            8
+          ],
+          [
+            8,
+            1
+          ]
+        ],
+        "formas_constantes": [
+          [
+            8
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "medias_padronizacao": [
+        14.14075164835165,
+        19.245582417582416
+      ],
+      "escalas_padronizacao": [
+        3.6151608840330103,
+        4.202144094442751
+      ],
+      "out_activation": "logistic",
+      "avisos": [],
+      "medidas_ajustamento": {
+        "AUC": 0.960185758513932,
+        "log_loss": 0.22610273641031697,
+        "acerto": 0.8989010989010989,
+        "VN": 271,
+        "FP": 14,
+        "FN": 32,
+        "VP": 138,
+        "empates_050": 0
+      },
+      "erro_maximo_reconstituicao_manual": 0.0
+    },
+    {
+      "unidades": 32,
+      "n_treino": 455,
+      "uso": "Ajustamento ao desenvolvimento completo para ilustração; não é avaliação de validação.",
+      "epocas_fit": 118,
+      "parametros": {
+        "pesos": 96,
+        "termos_constantes": 33,
+        "total": 129,
+        "formas_pesos": [
+          [
+            2,
+            32
+          ],
+          [
+            32,
+            1
+          ]
+        ],
+        "formas_constantes": [
+          [
+            32
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "medias_padronizacao": [
+        14.14075164835165,
+        19.245582417582416
+      ],
+      "escalas_padronizacao": [
+        3.6151608840330103,
+        4.202144094442751
+      ],
+      "out_activation": "logistic",
+      "avisos": [],
+      "medidas_ajustamento": {
+        "AUC": 0.960639834881321,
+        "log_loss": 0.22558627217398447,
+        "acerto": 0.8989010989010989,
+        "VN": 270,
+        "FP": 15,
+        "FN": 31,
+        "VP": 139,
+        "empates_050": 0
+      },
+      "erro_maximo_reconstituicao_manual": 0.0
+    }
+  ]
+}
