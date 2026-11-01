@@ -1,0 +1,97 @@
+PROJETOS INTEGRADORES — APRENDIZAGEM AUTOMÁTICA EM BIOCIÊNCIAS
+
+Este pacote acompanha o capítulo «Aplicar os métodos a novos dados», da Parte V.
+Contém os dados, os programas completos das resoluções, os resultados e as
+figuras dos três projetos. Os enunciados e as explicações encontram-se no livro.
+
+1. CONTEÚDO
+
+projeto_01 — Variação morfológica e agrupamento de caranguejos.
+  Dados: dados/crabs.csv.
+  Programa: projeto_01.py.
+  Saídas principais: resultados.json e figuras/.
+
+projeto_02 — Classificação e decisões nos dados Pima.
+  Desenvolvimento: dados/pima.tr, com 200 participantes.
+  Teste final: dados/pima.te, com 332 participantes.
+  Programa: projeto_02.py.
+  Desenvolvimento: resultados_desenvolvimento.json e decisoes.json.
+  Reprodução completa: resultados.json e figuras/.
+
+projeto_03 — Previsão da massa corporal com medições repetidas.
+  Dados: dados/ChickWeight.csv, com 578 medições de 50 animais.
+  Programa: projeto_03.py.
+  Divisão por animal: divisao.json e validacao_divisao.json.
+  Desenvolvimento: desenvolvimento.json, selecao_antes_teste.json e
+    previsoes_validacao.csv.
+  Reprodução completa: resultados.json, previsoes_teste.csv e figuras/.
+  Conferência das métricas: validar_resultados.py.
+
+As figuras estão em PDF e PNG. Os JSON conservam valores completos, escolhas,
+partições e versões do software. Os CSV de previsões permitem refazer as contas.
+As saídas fornecidas correspondem à execução usada na resolução do livro.
+
+2. ORDEM DE TRABALHO
+
+Para realizar um projeto, começar pelo enunciado e registar o plano de análise.
+Os programas deste pacote são resoluções completas; a sua leitura e execução
+podem ser feitas depois de uma primeira tentativa própria.
+
+Para reproduzir uma resolução, descompactar o pacote, conservar a organização
+das pastas e seguir COMANDOS.txt. Os programas leem dados locais e não precisam
+de acesso à Internet durante a análise. A instalação inicial das bibliotecas
+pode exigir Internet.
+
+Nos projetos 02 e 03, executar sem argumentos realiza apenas o desenvolvimento.
+A opção --confirmar-teste executa a reprodução completa. O desenvolvimento é
+recalculado com as mesmas regras antes da fase final. Executar só o
+desenvolvimento preserva os ficheiros de resultados finais já existentes.
+
+O projeto 03 reutiliza a divisão por animal registada em divisao.json. O seu
+programa não mistura medições do mesmo animal entre treino, validação e teste.
+O identificador do animal não é um preditor. Os erros de previsão são calculados
+como observado menos previsto; um erro positivo indica subestimação.
+
+Os conjuntos e as saídas são públicos. A reserva do teste é uma regra do
+procedimento, não uma garantia de que as respostas sejam inacessíveis.
+Depois de usar resultados do teste para mudar o método, esse conjunto passa a
+contribuir para o desenvolvimento e deixa de fornecer a avaliação reservada
+prevista no plano inicial.
+
+3. AMBIENTE
+
+A execução de referência usou Python 3.12.14. As versões das bibliotecas estão
+em requirements.txt e nos JSON. Usar um ambiente Python 3.12 com essas versões
+permite aproximar as condições verificadas. A instalação é feita uma vez:
+
+python -m pip install -r requirements.txt
+
+Em cadernos, se a instalação alterar bibliotecas já importadas, é necessário
+reiniciar a sessão e voltar a executar a preparação. Não é necessário instalar
+R. Os ficheiros Pima são tabelas de texto com espaços como separadores.
+
+4. RESULTADOS DE REFERÊNCIA
+
+Projeto 01: PC1 explica 95,7767% da variância das medidas padronizadas;
+  a resolução discute K-means com dois grupos, de 92 e 108 animais.
+Projeto 02: regressão logística com C=0,1 e limiar 0,25;
+  no teste: TN=154, FP=69, FN=11, TP=98; AUROC=0,863044.
+Projeto 03: árvore com profundidade máxima 5 e pelo menos 4 registos por folha;
+  MAE de teste médio por animal=18,048911 g; MAE reunido=17,862305 g.
+
+Estes valores servem para conferir a reprodução das opções fornecidas. Não são
+metas de desempenho obrigatórias para outras soluções justificadas, nem
+garantias para novas amostras ou populações. O texto apresenta arredondamentos.
+
+5. ORIGEM DOS DADOS
+
+FONTES_DADOS.txt identifica as referências, as ligações de acesso e os ficheiros
+utilizados. Os nomes e valores dos dados originais foram conservados.
+O programa explicita as colunas usadas e as excluídas.
+
+6. SE A EXECUÇÃO FALHAR
+
+Conferir a pasta de trabalho, os nomes dos ficheiros e as versões instaladas.
+Guardar o comando executado e a mensagem completa. Num pedido de apoio,
+identificar o projeto e indicar se a falha ocorreu no desenvolvimento ou na
+fase final. Não modificar os dados para fazer desaparecer uma mensagem de erro.

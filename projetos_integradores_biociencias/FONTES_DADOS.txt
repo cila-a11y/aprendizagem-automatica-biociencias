@@ -1,0 +1,60 @@
+ORIGEM DOS DADOS DOS PROJETOS INTEGRADORES
+Ligações verificadas em 1 de novembro de 2026.
+
+1. CARANGUEJOS — crabs
+
+Campbell, N. A. e Mahon, R. J. (1974). A multivariate study of variation in two
+species of rock crab of the genus Leptograpsus. Australian Journal of Zoology,
+22(3), 417–425. https://doi.org/10.1071/ZO9740417
+
+Venables, W. N. e Ripley, B. D. (2002). Modern Applied Statistics with S.
+4.ª edição. Springer. https://doi.org/10.1007/978-0-387-21706-2
+
+Documentação: https://search.r-project.org/CRAN/refmans/MASS/html/crabs.html
+CSV utilizado: https://vincentarelbundock.github.io/Rdatasets/csv/MASS/crabs.csv
+Ficheiro do autor: https://www.stats.ox.ac.uk/pub/PRNN/crabs.dat
+Ficheiro local: projeto_01/dados/crabs.csv
+
+O CSV contém 200 linhas de dados e uma coluna adicional rownames. Excluída essa
+coluna, as oito colunas coincidem com o ficheiro do autor. Foram conservados os
+valores e os nomes originais. sp e sex só são usados na interpretação posterior;
+index e rownames são contadores e não entram nos métodos.
+
+2. PIMA — VERSÃO PEDAGÓGICA
+
+Ripley, B. D. (1996). Pattern Recognition and Neural Networks.
+Cambridge University Press. https://doi.org/10.1017/CBO9780511812651
+
+Smith, J. W., Everhart, J. E., Dickson, W. C., Knowler, W. C. e Johannes,
+R. S. (1988). Using the ADAP learning algorithm to forecast the onset of
+diabetes mellitus. Proceedings of the Symposium on Computer Applications
+in Medical Care, 261–265. https://pmc.ncbi.nlm.nih.gov/articles/PMC2245318/
+
+Documentação: https://www.stats.ox.ac.uk/pub/PRNN/README.html
+Documentação da versão: https://search.r-project.org/CRAN/refmans/MASS/html/Pima.tr.html
+Desenvolvimento: https://www.stats.ox.ac.uk/pub/PRNN/pima.tr
+Teste: https://www.stats.ox.ac.uk/pub/PRNN/pima.te
+Ficheiros locais: projeto_02/dados/pima.tr e projeto_02/dados/pima.te
+
+Foram conservados os ficheiros de texto. Contêm sete preditores e a resposta
+type. No código, No corresponde a 0 e Yes a 1. A versão de ensino utiliza
+200 casos completos no desenvolvimento e 332 no teste; não é a divisão
+576/192 do artigo original. Não foram acrescentadas datas de seguimento.
+
+3. CRESCIMENTO DE PINTOS — ChickWeight
+
+Crowder, M. J. e Hand, D. J. (1990). Analysis of Repeated Measures.
+Chapman & Hall, Londres. Exemplo 5.3. ISBN 978-0-412-31830-6.
+
+Documentação: https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/ChickWeight.html
+CSV utilizado: https://vincentarelbundock.github.io/Rdatasets/csv/datasets/ChickWeight.csv
+Ficheiro local: projeto_03/dados/ChickWeight.csv
+
+Foram conservados os valores e as cinco colunas do CSV: rownames, weight,
+Time, Chick e Diet. A coluna rownames resulta da exportação. A massa é medida
+em gramas e a idade em dias. Chick é utilizado apenas para identificar animais
+e organizar as separações. Diet é uma categoria, não uma dose numérica.
+
+As cópias CSV de crabs e ChickWeight são distribuídas pelo projeto Rdatasets,
+de Vincent Arel-Bundock: https://vincentarelbundock.github.io/Rdatasets/
+As referências e atribuições dos dados devem acompanhar a sua utilização.

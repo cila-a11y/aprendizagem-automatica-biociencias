@@ -1,0 +1,61 @@
+COMANDOS — EXECUTAR A PARTIR DA PASTA projetos_integradores_biociencias
+
+Instalação inicial, com Python 3.12:
+python -m pip install -r requirements.txt
+
+PROJETO 01 — EXPLORAÇÃO
+python projeto_01/projeto_01.py
+
+PROJETO 02 — CLASSIFICAÇÃO
+Primeiro, apenas desenvolvimento:
+python projeto_02/projeto_02.py
+
+Depois de fixadas as escolhas, reprodução completa com teste:
+python projeto_02/projeto_02.py --confirmar-teste
+
+PROJETO 03 — REGRESSÃO COM MEDIÇÕES REPETIDAS
+Conferir a divisão por animal:
+python projeto_03/projeto_03.py --validar-apenas
+
+Executar apenas desenvolvimento:
+python projeto_03/projeto_03.py
+
+Depois de fixadas as escolhas, reprodução completa com teste:
+python projeto_03/projeto_03.py --confirmar-teste
+
+Conferir as métricas a partir das previsões guardadas:
+python projeto_03/validar_resultados.py
+
+GOOGLE COLAB
+
+1. Abrir um caderno e carregar o arquivo deste pacote:
+
+from google.colab import files
+files.upload()
+
+2. Descompactar o arquivo, mantendo o nome e as pastas:
+
+from zipfile import ZipFile
+with ZipFile("projetos_integradores_biociencias.zip") as arquivo:
+    arquivo.extractall(".")
+
+3. Entrar na pasta do pacote e instalar as bibliotecas:
+
+%cd projetos_integradores_biociencias
+%pip install -r requirements.txt
+
+Se a instalação pedir reinício da sessão, fazê-lo e repetir apenas a mudança
+para a pasta antes de executar o projeto. Os ficheiros já descompactados
+permanecem no armazenamento da sessão enquanto esta existir.
+
+4. Executar, por exemplo, o desenvolvimento do projeto 02:
+
+%run projeto_02/projeto_02.py
+
+5. Para a reprodução completa, depois de fixadas as decisões:
+
+%run projeto_02/projeto_02.py --confirmar-teste
+
+Nos outros projetos, substituir pelo caminho e pelos argumentos indicados acima.
+Para conservar os novos resultados depois da sessão, descarregar os ficheiros
+gerados na pasta do respetivo projeto.

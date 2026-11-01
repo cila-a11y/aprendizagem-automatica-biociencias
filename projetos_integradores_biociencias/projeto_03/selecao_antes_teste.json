@@ -1,0 +1,15 @@
+{
+  "criterio": "menor MAE médio dos 40 animais com previsão fora de amostra",
+  "vencedor": "arvore_p5_f4",
+  "parametros": {
+    "max_depth": 5,
+    "min_samples_leaf": 4
+  },
+  "fixada_antes_da_avaliacao_final": true,
+  "representantes_pre_fixados": [
+    "mediana",
+    "idade",
+    "idade_dieta",
+    "arvore_p5_f4"
+  ]
+}
